@@ -14,10 +14,15 @@
 body {
   font-family: var(--primary-font);
   padding-top: 57.15px; /* pushes the top of the header down under fixed navbar */
+  
+  
 }
 
+/* Sets styling for all links glaobally */
+a {text-decoration: none;
+color: initial}
 section {
-  margin: 40px 0;
+  padding-bottom: 6rem;
 }
 
 h1,
@@ -27,4 +32,170 @@ h4,
 h5,
 h6 {
   font-family: var(--secondary-font);
+}
+
+h2 {
+  font-size: 44px;
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+/* Image Styling */
+.test-image {
+  height: 400px;
+  width: 400px;
+}
+
+.test-image2 {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+
+
+/* Icon Styling */
+
+.icon-shell {
+  width: 100px;
+  height: 100px;
+  border-radius: 65% 35% 32% 68% / 62% 56% 44% 38%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.service-icon i {
+  font-size: 35px;
+}
+
+/* Icon Background Styling */
+.icon-service-bg1 {
+  background: rgb(97 104 255 / 11%);
+}
+
+.icon-service-bg2 {
+  background: rgb(255 79 129 / 12%);
+}
+
+.icon-service-bg3 {
+  background: rgb(10 191 83 / 14%);
+}
+
+.icon-service-bg4 {
+  background: rgb(255 153 51 / 16%);
+}
+
+.fa-circle-check {
+  font-size: 18px;
+  color: #2ebf52;
+}
+
+.icon-service-icon1 {
+  transform: rotate(270deg);
+  color: #6168ff;
+}
+
+.icon-service-icon2 {
+  color: #ff4f81;
+}
+
+.icon-service-icon3 {
+  color: #0abf53;
+}
+
+.icon-service-icon4 {
+  color: #ff9933;
+}
+
+/* Thumbnail Sections  */
+
+.service-thumbnail {
+  margin-bottom: 1.5em;
+}
+
+/* Styling the Images */
+
+.image-pets-happy {
+  width: 100%;
+  position: relative;
+  top: -50px;
+}
+
+/* Border Radius for Large Images */
+.img-br-lg {
+
+  border-radius: 15px;
+}
+
+
+
+/* Button Skew  Styling  */
+.button-container {
+  display: inline-block;
+  transform: skew(-6deg);
+  border-radius: 6px;
+  height: fit-content;
+  background-color: white;
+  border: 2px solid #e0e0e0; 
+  transition: background-color 0.2s ease-in-out;
+
+}
+
+.button-container:hover {
+  background-color: #FFDA55; /* For yellow button */
+  border: 2px solid #FFDA55;
+}
+
+.skew-button {
+  display: inline-flex;
+  align-items: center;
+  justify-center;
+  padding: 8px 20px;
+  background: transparent;
+  border: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transform: skew(5deg); /* Counter-transform to keep text straight */
+}
+
+.skew-button .play-icon {margin-right: 10px;}
+
+.voted-best {
+
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Pawcast */
+
+#pawcast {
+
+background-color: #f0f0ff54;
+padding: 70px
+}
+
+#pawcast-listings > div {
+
+  flex: 1 1 222px;
+  margin-top: 30px;
+}
+
+/* Large devices (small laptops, 992px and up) */
+@media screen and (min-width: 992px) {
+  /* Sets the flex basis on the Pawcast child div for small laptop screens */
+  #pawcast-listings > div {
+
+    flex-basis: 204px;
+  }
+  }
 }
