@@ -128,7 +128,7 @@ h3 {
   top: -50px;
 }
 
-/* Border Radius for Large Images */
+/* Border radius for large images */
 .img-br-lg {
 
   border-radius: 15px;
@@ -136,64 +136,148 @@ h3 {
 
 
 
-/* Button Skew  Styling  */
+/* Skew Button Styling  */
+
+
+/* Button - Base - Next add "Big" or or one of the "Small" types */
 .button-container {
   display: inline-block;
   transform: skew(-6deg);
   border-radius: 6px;
-  height: fit-content;
-  background-color: white;
-  border: 2px solid #e0e0e0; 
+  height: fit-content; 
   transition: background-color 0.2s ease-in-out;
-
 }
 
-.button-container:hover {
+
+/* Button - Big - This requires the "Button - Base" paired in the same div */
+.button-container-big {
+  background-color: white;
+  border: 2px solid #e0e0e0; 
+}
+
+/* Button - Small - Option 1 - This requires the "Button - Base" paired in the same div */
+.button-container-small-opt1 {
+  background-color: #fbf0db;
+  border: 0px; 
+  
+}
+
+/* Button - Big Hover - This hover is only for the "Button - Big" */
+.button-container-big:hover {
   background-color: #FFDA55; /* For yellow button */
   border: 2px solid #FFDA55;
 }
 
-.skew-button {
+/* Button - Base Details - Next add "Big" or one of the "Small" types */
+.button-container .skew-button {
   display: inline-flex;
   align-items: center;
   justify-center;
-  padding: 8px 20px;
   background: transparent;
   border: none;
-  color: #333;
-  font-weight: 500;
-  font-size: 16px;
   cursor: pointer;
   transform: skew(5deg); /* Counter-transform to keep text straight */
 }
 
-.skew-button .play-icon {margin-right: 10px;}
 
-.voted-best {
-
-  border: 1px solid #333;
-  border-radius: 5px;
-  padding: 20px;
+/* Button - Details */
+.button-container .skew-big {
+  padding: 8px 20px;
+  color: #333;
 }
 
-/* Pawcast */
+
+
+/* Button - Details - Small - Option 1 - This requires the "Button - Details" - Base paired in the same div */
+.button-container .skew-small-opt1 {
+  font-size: 14px;
+  padding: 3px 9px;
+  color: #b58747;
+}
+
+/* Button - Play Icon */
+.button-container .skew-button .play-icon {margin-right: 10px;}
+
+
+
+/* Pawcast Section */
 
 #pawcast {
 
-background-color: #f0f0ff54;
+background-color: #e1f6e975;
 padding: 70px
 }
 
-#pawcast-listings > div {
+/* This makes the H3 looks like an H4. I kep the H3 for SEO hiarchy  */
+#pawcast h3 {
+font-size: 24px;
+
+  }
+
+  /* This div within the "pawcast-listings" div */
+.pawcast-listings > div {
 
   flex: 1 1 222px;
   margin-top: 30px;
 }
 
+/* The are below the image in the "pawcast-listings" div */
+.pawcast-listings .below-image {
+
+  margin-top: 1rem;
+  padding: 0 5px;
+  gap: 5px;
+}
+
+/* This is the date section in the "paw-listings" div */
+.pawcast-listings .date {
+
+  flex-basis: 75px;
+}
+
+/* Voted Best Section  */
+
+#voted-best {
+  margin-bottom: 100px;
+}
+
+/* Voted Best - The wreath image */
+#voted-best .wreath-review img {width: 51px;}
+
+
+/* Voted Best - Flipping the wreath image horizontally for use ont he other side*/
+#voted-best .wreath-review .wreath-flipped {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+/* Voted Best - The main text */
+#voted-best .wreath-review .text {
+
+  font-family: var(--secondary-font);
+  font-size: 23px;
+  font-weight: 700;
+  margin: 0 10px;
+  line-height: 1.2;
+  max-width: 200px;
+}
+
+/* Voted Best - The secondary text */
+.wreath-review .text .who-said-it {
+
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+
+
+
+
 /* Large devices (small laptops, 992px and up) */
 @media screen and (min-width: 992px) {
   /* Sets the flex basis on the Pawcast child div for small laptop screens */
-  #pawcast-listings > div {
+  .pawcast-listings > div {
 
     flex-basis: 204px;
   }
