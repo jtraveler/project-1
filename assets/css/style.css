@@ -7,6 +7,7 @@
   --secondary-font: "Nunito", cursive;
   --primary-color: #3a2620; /* dark brown */
   --secondary-color: #aa9581; /* light brown */
+  --faded-grey-color: rgb(141, 141, 141);
 }
 
 /* Global styles */
@@ -22,7 +23,7 @@ body {
 a {text-decoration: none;
 color: initial}
 section {
-  padding-bottom: 6rem;
+  padding-bottom: 3rem;
 }
 
 h1,
@@ -120,9 +121,9 @@ h3 {
   margin-bottom: 1.5em;
 }
 
-/* Styling the Images */
+/* Pet Happy Section - Styling the Image */
 
-.image-pets-happy {
+.image-pets-happy img {
   width: 100%;
   position: relative;
   top: -50px;
@@ -162,8 +163,10 @@ h3 {
   
 }
 
-/* Button - Big Hover - This hover is only for the "Button - Big" */
-.button-container-big:hover {
+
+/* Button - Big Hover - This hover is only for the "Button - Big".
+In addition, I made it so that if the user hovers over the parent "paw-listing", the clid button hover is triggered */
+.button-container-big:hover, .pawcast-listing:hover .button-container-big  {
   background-color: #FFDA55; /* For yellow button */
   border: 2px solid #FFDA55;
 }
@@ -175,7 +178,6 @@ h3 {
   justify-center;
   background: transparent;
   border: none;
-  cursor: pointer;
   transform: skew(5deg); /* Counter-transform to keep text straight */
 }
 
@@ -205,8 +207,18 @@ h3 {
 #pawcast {
 
 background-color: #e1f6e975;
-padding: 70px
+padding: 70px 0;
 }
+
+#pawcast > div {
+
+  gap: 30px;
+  }
+
+#pawcast h2 {
+  flex-basis: 80%;
+  
+    }
 
 /* This makes the H3 looks like an H4. I kep the H3 for SEO hiarchy  */
 #pawcast h3 {
@@ -214,19 +226,21 @@ font-size: 24px;
 
   }
 
-  /* This div within the "pawcast-listings" div */
-.pawcast-listings > div {
+  /* This div within the "pawcast-listing" div */
+.pawcast-listing {
 
-  flex: 1 1 222px;
-  margin-top: 30px;
+  flex: 1 1 auto;
+  margin-bottom: 15px;
 }
 
-/* The are below the image in the "pawcast-listings" div */
-.pawcast-listings .below-image {
+
+
+/* The are below the image in the "pawcast-listing" div */
+.pawcast-listing .below-image {
 
   margin-top: 1rem;
   padding: 0 5px;
-  gap: 5px;
+  gap: 8px;
 }
 
 /* This is the date section in the "paw-listings" div */
@@ -269,17 +283,110 @@ font-size: 24px;
   font-size: 14px;
 }
 
+#reviews .review-listings-shell {
+  gap: 30px;
+ 
+ }
+
+ #reviews .review-listings{
+  flex: 1 1 300px;
+ 
+ }
+
+
+
+ #reviews .review-listings .two-cents {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+  padding: 20px;
+  
+ 
+ }
+
+ #reviews .review-listings .two-cents-header .fa-facebook {
+  color: blue;
+  font-size: 22px;
+ 
+ }
+
+ #reviews .review-listings .two-cents-header .time-stamp {
+  color:var(--faded-grey-color);
+  font-size: 14px;
+ 
+ }
+
+
+
+
+ #reviews .review-listings .two-cents-body {
+  margin: 20px 0;
+ 
+ }
 
 
 
 
 
-/* Large devices (small laptops, 992px and up) */
+ #reviews .review-listings .two-cents .name {
+
+  font-size: 14px;
+  
+ }
+
+ #reviews .review-listings .two-cents .username {
+
+  font-size: 14px;
+  color:var(--faded-grey-color);
+  
+ }
+
+
+ #reviews .review-listings .two-cents .stars {
+
+  width: 15px;
+  height: 15px;
+  flex-basis: 100px;
+  
+ }
+
+
+
+
+
+/* Large devices (small laptops, 992px and UP!) */
 @media screen and (min-width: 992px) {
-  /* Sets the flex basis on the Pawcast child div for small laptop screens */
-  .pawcast-listings > div {
+  /* Sets the flex basis on the "pawcast-listing" div for small laptop screens */
+  .pawcast-listing {
 
-    flex-basis: 204px;
+    flex-basis: 222px;
   }
+
+}
+
+/* Special breakpoint only for the last "pawcast-listing" div so that it doesn't span 
+full width thus making it appear to be the same width as the other "pawcast-listing" divs */
+@media (min-width: 993px) and (max-width: 1199px) {
+  .pawcast-listing:last-child {
+
+    max-width: 32%;
+  }
+}
+
+
+
+
+/* Large devices (small laptops, 992px and BELOW!) */
+@media screen and (max-width: 992px) {
+  
+  /* Pet Happy Section - Reordering the image to appear after the text */
+
+  .image-pets-happy {
+    order: 2;
+  }
+
+  /* Pet Happy Section - Styling the Image */
+  .image-pets-happy img {
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
   }
 }
