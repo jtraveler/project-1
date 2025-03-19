@@ -19,11 +19,43 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body class="d-flex flex-column min-vh-100">
-    <nav class="container d-flex pb-3">
-      
-      <div class="me-auto">Pawfection</div>
-      <di>Home | About | Services | Contact</di>
-      
+    <nav
+      id="navbar" class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          Logo Placement
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#events" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
     </nav>
     <header class="d-flex container-fluid section pb-5">
       <div class="container d-flex flex-wrap pt-5 px-0">
@@ -89,7 +121,7 @@
                     <i class="fa-solid fa-house icon-service-icon2"></i>
                   </div>
                 </div>
-                <h3>Dog Daycare</h3>
+                <h3>Doggie Daycare</h3>
                 <p>Lorem ipsum dolor sit amet ipsum dolor sit amet</p>
               </div>
               <div class="col-12 col-md-6 service-thumbnail">
@@ -140,7 +172,7 @@
           
           <div class="button-container button-container-big mt-3">
             <button class="skew-button skew-big">
-              Browse All
+              Learn More
             </button>
           </div>
         </div>
@@ -195,7 +227,7 @@
         <a href="#" class="col-12 col-md-4 pawcast-listing">
           
             
-          <div><img src="assets/images/midjourney-woman-and-dog-2-surprised.jpg" class="mx-auto d-block img-br-lg img-fluid" /></div>
+          <div><img src="assets/images/midjourney-2.jpg" class="mx-auto d-block img-br-lg img-fluid" /></div>
           <div class="d-flex below-image flex-wrap align-items-center px-xl-2">
             <div class="icon me-2"><i class="fa-solid fa-volume-high"></i></div>
             
@@ -213,7 +245,7 @@
             <div class="date">March 5</div>
           </div>
           <p>
-            <h3> How to pick a dog that goes well with your personality.</h3>
+            <h3> Our city guide for joggin with your dog.</h3>
           </p>
           <div class="button-container button-container-big mt-1">
             <button class="skew-button skew-big">
@@ -227,7 +259,7 @@
         <a href="#" class="col-12 col-md-4 pawcast-listing">
           
             
-          <div><img src="assets/images/midjourney-woman-and-dog-2-surprised.jpg" class="mx-auto d-block img-br-lg img-fluid" /></div>
+          <div><img src="assets/images/midjourney-1.jpg" class="mx-auto d-block img-br-lg img-fluid" /></div>
           <div class="d-flex below-image flex-wrap align-items-center px-xl-2">
             <div class="icon me-2"><i class="fa-solid fa-volume-high"></i></div>
             
@@ -245,7 +277,7 @@
             <div class="date">March 5</div>
           </div>
           <p>
-            <h3> How to pick a dog that goes well with your personality.</h3>
+            <h3> Tips and tricks for traveling with your furry friend.</h3>
           </p>
           <div class="button-container button-container-big mt-1">
             <button class="skew-button skew-big">
@@ -259,7 +291,7 @@
         <a href="#" class="col-12 col-md-4 pawcast-listing">
           
             
-          <div><img src="assets/images/midjourney-woman-and-dog-2-surprised.jpg" class="mx-auto d-block img-br-lg img-fluid" /></div>
+          <div><img src="assets/images/midjourney-3.jpg" class="mx-auto d-block img-br-lg img-fluid" /></div>
           <div class="d-flex below-image flex-wrap align-items-center px-xl-2">
             <div class="icon me-2"><i class="fa-solid fa-volume-high"></i></div>
             
@@ -277,7 +309,7 @@
             <div class="date">March 5</div>
           </div>
           <p>
-            <h3> How to pick a dog that goes well with your personality.</h3>
+            <h3> We break down the best dog breeds for children.</h3>
           </p>
           <div class="button-container button-container-big mt-1">
             <button class="skew-button skew-big">
@@ -291,10 +323,10 @@
         
       </section>
 
-      <section class="container mt-5">
-        <div class="row container">
+      <section id="voted-best" class="container mt-5 d-flex flex-wrap align-items-center">
+       
           <div class="col-12 col-md-6 my-auto pe-lg-5">
-            <div class="col-12">
+          
               <h2>
                 Our Recent Reward
                 
@@ -308,21 +340,20 @@
                 Suspendisse non init magnaa velit efficitur, dolor eget ex
                 fermentum.
               </p>
-            </div>
             
           </div>
-          <div class="col-12 col-md-6">
-            <div id="voted-best" class="mt-md-5 container d-flex align-items-center flex-column">
+          <div class="col-12 col-md-5 proud-dog d-flex align-items-center">
+            <div class="container d-flex align-items-center flex-column justify-content-center">
               <img src="assets/images/https-__lottiefiles.com_free-animation_dog-walking-7K4JCxjvHm.jpg" style="mix-blend-mode: darken;" width="179px">
               <div class="wreath-review d-flex align-items-center">
-                <img src="assets/images/laurel-wreath-black-60-percent-opacity-from rawpixel-dot-com-on-freepik-dot-com.svg">
+                <img src="assets/images/laurel-wreath-black-60-percent-opacity-from rawpixel-dot-com-on-freepik-dot-com.svg" class="me-auto">
                 <div class="text text-center"><span>Voted Best Dog Walkers in NYC</span><br><span class="who-said-it d-block">— Dog Lovers Magazine</span></div>
-                <img src="assets/images/laurel-wreath-black-60-percent-opacity-from rawpixel-dot-com-on-freepik-dot-com.svg" class="wreath-flipped">
+                <img src="assets/images/laurel-wreath-black-60-percent-opacity-from rawpixel-dot-com-on-freepik-dot-com.svg" class="wreath-flipped ms-auto">
               </div>
             
           </div>
           </div>
-        </div>
+        
       </section>
 
       <section id="reviews">
@@ -351,7 +382,7 @@
                   
                   <div class="me-2"><img src="assets/images/profile-photo-dog-1.jpg"></div>
                   <div class="me-auto flex-column d-flex">
-                    <span class="name">Name</span>
+                    <span class="name">Mimi Tummy</span>
                     <span class="username">user name</span>
                   
                   </div>
@@ -370,7 +401,7 @@
               
           </div>
 
-          <div class="col-12 col-md-4 d-flex mt-2 flex-wrap review-listings">
+          <div class="col-12 col-md-4 d-flex flex-wrap review-listings">
             <div class="img-br-lg two-cents d-flex flex-column">
               <div class="two-cents-header d-flex">
                 <div class="me-auto"><i class="fa-brands fa-facebook"></i></div>
@@ -388,9 +419,9 @@
               </div>
               <div class="two-cents-footer mt-auto d-flex align-items-center">
                 
-                <div class="me-2">Profile</div>
+                <div class="me-2"><img src="assets/images/profile-photo-dog-2.jpg"></div>
                 <div class="me-auto flex-column d-flex">
-                  <span class="name">Name</span>
+                  <span class="name">Dr. Friggles</span>
                   <span class="username">user name</span>
                 
                 </div>
@@ -409,7 +440,7 @@
             
           </div>
 
-          <div class="col-12 col-md-4 d-flex mt-2 flex-wrap review-listings">
+          <div class="col-12 col-md-4 d-flex flex-wrap review-listings">
           <div class="img-br-lg two-cents d-flex flex-column">
             <div class="two-cents-header d-flex">
               <div class="me-auto"><i class="fa-brands fa-facebook"></i></div>
@@ -427,9 +458,9 @@
             </div>
             <div class="two-cents-footer mt-auto d-flex align-items-center">
               
-              <div class="me-2">Profile</div>
+              <div class="me-2"><img src="assets/images/profile-photo-dog-3.jpg"></div>
               <div class="me-auto flex-column d-flex">
-                <span class="name">Name</span>
+                <span class="name">Friggin Cute</span>
                 <span class="username">user name</span>
               
               </div>

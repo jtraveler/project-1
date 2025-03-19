@@ -4,7 +4,7 @@
 /* CSS Variables */
 :root {
   --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Nunito", cursive;
+  --secondary-font: "Nunito", sans-serif;
   --primary-color: #3a2620; /* dark brown */
   --secondary-color: #aa9581; /* light brown */
   --faded-grey-color: rgb(141, 141, 141);
@@ -37,7 +37,7 @@ h6 {
 
 h1 {
 
-  font-size: 90px;
+  font-size: 5em;
     font-weight: 700;
     line-height: 90px;
     margin-bottom: 30px;
@@ -55,9 +55,51 @@ h3 {
 }
 
 
-nav {
-position: relative;
-  top: 50px;
+
+
+
+/* Navbar */
+
+#navbar {
+  position: relative;
+  top: 20px;
+}
+
+/* Navbar - Logo */
+
+#navbar .logo {
+  width: 30px;
+}
+
+
+/* Navbar - Sets tje styling for the menu text */
+
+#navbar .navbar-nav {
+
+  font-family: 'Nunito';
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Navbar - Non mobile view - Sets the color of the inactive items */
+
+#navbar .navbar-nav li a {
+
+  color: #333;
+}
+
+
+/* Navbar - Non mobile view - Sets the color of the active item */
+#navbar .navbar-nav li .active {
+
+  color: #c2a229;
+}
+
+
+/* Navbar - Sets the color of the outline of the mobile hamberger menu when clicked on  */
+.navbar-toggler:focus {
+color: #c2a229;
+
 }
 
 
@@ -85,7 +127,7 @@ header .lottie-dog1 {
   
   background-image: url(/assets/images/homepage-shape-1-for-dog.svg);
   background-repeat: no-repeat;
-   background-size: 419px;
+   background-size: 100% 340px;
 background-position: bottom 50px center;
  
   }
@@ -291,7 +333,25 @@ padding: 70px 0;
 /* Voted Best Section  */
 
 #voted-best {
-  margin-bottom: 100px;
+  gap: 30px;
+}
+
+
+/* Voted Best - Background of the proud dog walking image */
+#voted-best .proud-dog {
+
+  background-image: url(/assets/images/homepage-shape-2-for-dog.svg);
+  background-repeat: no-repeat;
+   background-size: 100% 419px;
+background-position: center;
+height: 419px;
+padding-bottom: 50px;
+}
+
+/* Voted Best - The wreath shell */
+#voted-best .wreath-review {
+  width: 100%;
+  max-width: 300px;
 }
 
 /* Voted Best - The wreath image */
@@ -310,7 +370,6 @@ padding: 70px 0;
   font-family: var(--secondary-font);
   font-size: 23px;
   font-weight: 700;
-  margin: 0 10px;
   line-height: 1.2;
   max-width: 200px;
 }
@@ -368,6 +427,7 @@ padding: 70px 0;
  #reviews .review-listings .two-cents .name {
 
   font-size: 14px;
+  font-weight: 600;
   
  }
 
@@ -390,9 +450,9 @@ padding: 70px 0;
 
  footer {
 
-  background-color: #333;
-  height: 200px;
-  margin-top: 90px;
+  background-color: #e6e6e6;
+  min-height: 200px;
+  margin-top: 40px;
  }
 
 
@@ -405,10 +465,27 @@ padding: 70px 0;
 
     flex-basis: 222px;
   }
+  
+}
 
+
+
+
+/* XL Large devices (1200px XL screens only) */
+@media screen and (min-width: 1200px) {
+  /* Sets the width of the dog background shape for the mobile screens */
+  header .lottie-dog1 {
+  
+  background-size: 100% 360px;
+
+ }
 
   
 }
+
+
+
+
 
 /* Special breakpoint only for the last "pawcast-listing" div so that it doesn't span 
 full width thus making it appear to be the same width as the other "pawcast-listing" divs */
@@ -439,15 +516,3 @@ full width thus making it appear to be the same width as the other "pawcast-list
   }
 }
 
-
-/* Large devices (small laptops, 992px and BELOW!) */
-@media screen and (max-width: 577px) {
-  
-
-  /* Sets the width of the dog background shape for the mobile screens */
-  header .lottie-dog1 {
-  
-     background-size: 100%;
-   
-    }
-}
