@@ -14,7 +14,6 @@
 
 body {
   font-family: var(--primary-font);
-  padding-top: 57.15px; /* pushes the top of the header down under fixed navbar */
   color: #5d5d5d;
   
 }
@@ -40,7 +39,6 @@ h1 {
 
   font-size: 90px;
     font-weight: 700;
-    max-width: 450px;
     line-height: 90px;
     margin-bottom: 30px;
 }
@@ -56,27 +54,46 @@ h3 {
   font-size: 25px;
 }
 
-/* Image Styling */
-.test-image {
-  height: 400px;
-  width: 400px;
+
+nav {
+position: relative;
+  top: 50px;
 }
 
-.test-image2 {
-  height: 300px;
-  width: 100%;
-  border-radius: 10px;
-}
 
-header .lottie-dog1 {
+/* Dog's background shape in the header */
+header {
+  margin-top: -40px; /* Moves the header up to remove the white empty space since the nav is position reletive  */
+  padding-top: 90px;
   
-  background-image: url(assets/images/midjourney-woman-and-dog-1.jpg);
+  background-image: url(/assets/images/pawbackground-from-users-starline-on-freepik-dot-com.svg);
   background-repeat: no-repeat;
-   
+   background-size: 1849px;
+background-position: bottom -193px right -10px;
  
   }
 
+
+/* The size of the paragrph in the header */
+header p {
+
+  font-size: 20px;
+}
+
+/* Dog's background shape in the header */
+header .lottie-dog1 {
+  
+  background-image: url(/assets/images/homepage-shape-1-for-dog.svg);
+  background-repeat: no-repeat;
+   background-size: 419px;
+background-position: bottom 50px center;
+ 
+  }
+
+/* The div with the dog in the header */
 header .lottie-dog1 img {
+  position: relative;
+  bottom: 50px;
 width: 300px;
 height: auto;
 }
@@ -389,6 +406,8 @@ padding: 70px 0;
     flex-basis: 222px;
   }
 
+
+  
 }
 
 /* Special breakpoint only for the last "pawcast-listing" div so that it doesn't span 
@@ -418,4 +437,17 @@ full width thus making it appear to be the same width as the other "pawcast-list
     margin: 0 auto;
     display: block;
   }
+}
+
+
+/* Large devices (small laptops, 992px and BELOW!) */
+@media screen and (max-width: 577px) {
+  
+
+  /* Sets the width of the dog background shape for the mobile screens */
+  header .lottie-dog1 {
+  
+     background-size: 100%;
+   
+    }
 }
