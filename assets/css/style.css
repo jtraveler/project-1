@@ -1,30 +1,26 @@
 /* Google fonts import */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-
 /* CSS Variables */
 :root {
   --primary-font: "Open Sans", sans-serif;
   --secondary-font: "Nunito", sans-serif;
   --primary-color: #3a2620; /* dark brown */
   --secondary-color: #aa9581; /* light brown */
-  --faded-grey-color: rgb(141, 141, 141);
+  --faded-grey-color: rgb(103 103 103);
 }
-
 /* Global styles */
-
 body {
   font-family: var(--primary-font);
   color: #5d5d5d;
-  
 }
-
 /* Sets styling for all links glaobally */
-a {text-decoration: none;
-color: initial}
+a {
+  text-decoration: none;
+  color: initial;
+}
 section {
   padding-bottom: 3rem;
 }
-
 h1,
 h2,
 h3,
@@ -34,115 +30,78 @@ h6 {
   font-family: var(--secondary-font);
   color: #333;
 }
-
 h1 {
-
   font-size: 5em;
-    font-weight: 700;
-    line-height: 90px;
-    margin-bottom: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  margin-bottom: 30px;
 }
-
 h2 {
   font-size: 38px;
   font-weight: 700;
   margin-bottom: 1.3rem;
 }
-
 h3 {
   font-weight: 700;
   font-size: 25px;
 }
-
-
-
-
-
 /* Navbar */
-
 #navbar {
   position: relative;
   top: 20px;
 }
-
 /* Navbar - Logo */
-
 #navbar .logo {
   width: 30px;
 }
-
-
 /* Navbar - Sets tje styling for the menu text */
-
 #navbar .navbar-nav {
-
-  font-family: 'Nunito';
-    font-size: 18px;
-    font-weight: 700;
+  font-family: "Nunito";
+  font-size: 18px;
+  font-weight: 700;
 }
-
 /* Navbar - Non mobile view - Sets the color of the inactive items */
-
 #navbar .navbar-nav li a {
-
   color: #333;
+  margin-right: 15px;
 }
-
-
 /* Navbar - Non mobile view - Sets the color of the active item */
 #navbar .navbar-nav li .active {
-
-  color: #c2a229;
+  color: #a88a1c;
 }
-
-
 /* Navbar - Sets the color of the outline of the mobile hamberger menu when clicked on  */
 .navbar-toggler:focus {
-color: #c2a229;
-
+  color: #a88a1c;
 }
-
-
 /* Dog's background shape in the header */
 header {
-  margin-top: -40px; /* Moves the header up to remove the white empty space since the nav is position reletive  */
-  padding-top: 90px;
-  
-  background-image: url(/assets/images/pawbackground-from-users-starline-on-freepik-dot-com.svg);
+  margin-top: -60px; /* Moves the header up to remove the white empty space since the nav is position reletive  */
+  padding-top: 100px;
+
+  background-image: url(/assets/images/background-paws.svg);
   background-repeat: no-repeat;
-   background-size: 1849px;
-background-position: bottom -193px right -10px;
- 
-  }
-
-
+  background-size: 1849px;
+  background-position: bottom -193px right -10px;
+}
 /* The size of the paragrph in the header */
 header p {
-
   font-size: 20px;
 }
-
 /* Dog's background shape in the header */
 header .lottie-dog1 {
-  
   background-image: url(/assets/images/homepage-shape-1-for-dog.svg);
   background-repeat: no-repeat;
-   background-size: 100% 340px;
-background-position: bottom 50px center;
- 
-  }
-
+  background-size: 100% 340px;
+  background-position: bottom 50px center;
+}
 /* The div with the dog in the header */
 header .lottie-dog1 img {
   position: relative;
   bottom: 50px;
-width: 300px;
-height: auto;
+  width: 300px;
+  height: auto;
 }
-
-
 /* Icon Styling */
-
 .icon-shell {
   width: 100px;
   height: 100px;
@@ -152,75 +111,54 @@ height: auto;
   align-items: center;
   margin-bottom: 25px;
 }
-
 .service-icon i {
   font-size: 35px;
 }
-
 /* Icon Background Styling */
 .icon-service-bg1 {
   background: rgb(97 104 255 / 11%);
 }
-
 .icon-service-bg2 {
   background: rgb(255 79 129 / 12%);
 }
-
 .icon-service-bg3 {
   background: rgb(10 191 83 / 14%);
 }
-
 .icon-service-bg4 {
   background: rgb(255 153 51 / 16%);
 }
-
 .fa-circle-check {
   font-size: 18px;
   color: #2ebf52;
 }
-
 .icon-service-icon1 {
   transform: rotate(270deg);
   color: #6168ff;
 }
-
 .icon-service-icon2 {
   color: #ff4f81;
 }
-
 .icon-service-icon3 {
   color: #0abf53;
 }
-
 .icon-service-icon4 {
   color: #ff9933;
 }
-
 /* Thumbnail Sections  */
-
 .service-thumbnail {
   margin-bottom: 1.5em;
 }
-
 /* Pet Happy Section - Styling the Image */
-
 .image-pets-happy img {
   width: 100%;
   position: relative;
   top: -50px;
 }
-
 /* Border radius for large images */
 .img-br-lg {
-
   border-radius: 15px;
 }
-
-
-
 /* Skew Button Styling  */
-
-
 /* Button - Base - Next add "Big" or or one of the "Small" types */
 .button-container {
   display: inline-block;
@@ -229,42 +167,31 @@ height: auto;
   height: fit-content;
   transition: background-color 0.2s ease-in-out;
 }
-
-
 /* Button - Big - This requires the "Button - Base" paired in the same div */
 .button-container-big {
-  background-color: #FFDA55; /* For yellow button */
-  border: 2px solid #FFDA55;
+  background-color: #ffda55; /* For yellow button */
+  border: 2px solid #ffda55;
 }
-
 /* Button - Small - Option 1 - This requires the "Button - Base" paired in the same div */
 .button-container-small-opt1 {
   background-color: #fbf0db;
-  border: 0px; 
-  
+  border: 0px;
 }
-
-
 /* Button - Big Hover - This hover is only for the "Button - Big".
 In addition, I made it so that if the user hovers over the parent "paw-listing", the clid button hover is triggered */
-.button-container-big:hover, .pawcast-listing:hover .button-container-big  {
-  
-
+.button-container-big:hover,
+.pawcast-listing:hover .button-container-big {
   background-color: white;
-  border: 2px solid #e0e0e0; 
+  border: 2px solid #e0e0e0;
 }
-
 /* Button - Base Details - Next add "Big" or one of the "Small" types */
 .button-container .skew-button {
   display: inline-flex;
   align-items: center;
-  justify-center;
   background: transparent;
   border: none;
   transform: skew(5deg); /* Counter-transform to keep text straight */
 }
-
-
 /* Button - Details */
 .button-container .skew-big {
   padding: 6px 18px;
@@ -272,242 +199,170 @@ In addition, I made it so that if the user hovers over the parent "paw-listing",
   font-size: 14px;
   font-weight: 600;
 }
-
-
-
 /* Button - Details - Small - Option 1 - This requires the "Button - Details" - Base paired in the same div */
 .button-container .skew-small-opt1 {
   font-size: 14px;
   padding: 3px 9px;
-  color: #b58747;
+  color: #86622f;
 }
-
 /* Button - Play Icon */
-.button-container .skew-button .play-icon {margin-right: 10px;}
-
-
-
-/* Pawcast Section */
-
-#pawcast {
-
-background-color: #fefef1;
-padding: 70px 0;
+.button-container .skew-button .play-icon {
+  margin-right: 10px;
 }
-
+#fix-white-bg {
+  mix-blend-mode: darken;
+  width: 179px;
+}
+/* Pawcast Section */
+#pawcast {
+  background-color: #fefef1;
+  padding: 70px 0;
+}
 #pawcast > div {
-
   gap: 30px;
-  }
+}
+#pawcast .pawcast-header {
+  gap: 30px;
+  margin-bottom: 10px;
+}
 
 #pawcast h2 {
-  flex-basis: 80%;
-  
-    }
-
-
-
-  /* This div within the "pawcast-listing" div */
+  flex-basis: 328px;
+  margin-bottom: 0;
+}
+/* This div within the "pawcast-listing" div */
 .pawcast-listing {
-
   flex: 1 1 auto;
   margin-bottom: 15px;
 }
-
-
-
 /* The are below the image in the "pawcast-listing" div */
 .pawcast-listing .below-image {
-
-  margin-top: 1rem;
+  margin: 1rem 0;
   padding: 0 5px;
   gap: 8px;
 }
-
 /* This is the date section in the "paw-listings" div */
-.pawcast-listings .date {
-
+.pawcast-listing .date {
   flex-basis: 75px;
+  text-align: right;
+}
+
+/* This is H3 of the "paw-listings" div */
+.pawcast-listing h3 {
+  margin-bottom: 20px;
+  min-height: 90px;
 }
 
 /* Voted Best Section  */
-
 #voted-best {
   gap: 30px;
 }
-
-
 /* Voted Best - Background of the proud dog walking image */
 #voted-best .proud-dog {
-
   background-image: url(/assets/images/homepage-shape-2-for-dog.svg);
   background-repeat: no-repeat;
-   background-size: 100% 419px;
-background-position: center;
-height: 419px;
-padding-bottom: 50px;
+  background-size: 100% 419px;
+  background-position: center;
+  height: 419px;
+  padding-bottom: 50px;
 }
-
 /* Voted Best - The wreath shell */
 #voted-best .wreath-review {
   width: 100%;
   max-width: 300px;
 }
-
 /* Voted Best - The wreath image */
-#voted-best .wreath-review img {width: 51px;}
-
-
+#voted-best .wreath-review img {
+  width: 51px;
+}
 /* Voted Best - Flipping the wreath image horizontally for use ont he other side*/
 #voted-best .wreath-review .wreath-flipped {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
-
 /* Voted Best - The main text */
 #voted-best .wreath-review .text {
-
   font-family: var(--secondary-font);
   font-size: 23px;
   font-weight: 700;
   line-height: 1.2;
   max-width: 200px;
 }
-
 /* Voted Best - The secondary text */
 .wreath-review .text .who-said-it {
-
   margin-top: 10px;
   font-size: 14px;
 }
-
 #reviews .review-listings-shell {
   gap: 30px;
- 
- }
-
- #reviews .review-listings{
+}
+#reviews .review-listings {
   flex: 1 1 300px;
- 
- }
-
-
-
- #reviews .review-listings .two-cents {
-  box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+}
+#reviews .review-listings .two-cents {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  
- 
- }
-
- #reviews .review-listings .two-cents-header .fa-facebook {
+}
+#reviews .review-listings .two-cents-header .fa-facebook {
   color: blue;
   font-size: 22px;
- 
- }
-
- #reviews .review-listings .two-cents-header .time-stamp {
-  color:var(--faded-grey-color);
+}
+#reviews .review-listings .two-cents-header .time-stamp {
+  color: var(--faded-grey-color);
   font-size: 14px;
- 
- }
-
-
-
-
- #reviews .review-listings .two-cents-body {
+}
+#reviews .review-listings .two-cents-body {
   margin: 20px 0;
- 
- }
-
-
-
-
-
- #reviews .review-listings .two-cents .name {
-
+}
+#reviews .review-listings .two-cents .name {
   font-size: 14px;
   font-weight: 600;
-  
- }
-
- #reviews .review-listings .two-cents .username {
-
+}
+#reviews .review-listings .two-cents .username {
   font-size: 14px;
-  color:var(--faded-grey-color);
-  
- }
-
-
- #reviews .review-listings .two-cents .stars {
-
+  color: var(--faded-grey-color);
+}
+#reviews .review-listings .two-cents .stars {
   width: 15px;
   height: 15px;
   flex-basis: 100px;
-  
- }
-
-
- footer {
-
+}
+footer {
   background-color: #e6e6e6;
   min-height: 200px;
   margin-top: 40px;
- }
-
-
-
-
+}
 /* Large devices (small laptops, 992px and UP!) */
 @media screen and (min-width: 992px) {
   /* Sets the flex basis on the "pawcast-listing" div for small laptop screens */
   .pawcast-listing {
-
     flex-basis: 222px;
   }
-  
 }
-
-
-
-
 /* XL Large devices (1200px XL screens only) */
 @media screen and (min-width: 1200px) {
   /* Sets the width of the dog background shape for the mobile screens */
   header .lottie-dog1 {
-  
-  background-size: 100% 360px;
-
- }
-
-  
+    background-size: 100% 360px;
+  }
 }
-
-
-
-
-
 /* Special breakpoint only for the last "pawcast-listing" div so that it doesn't span 
 full width thus making it appear to be the same width as the other "pawcast-listing" divs */
 @media (min-width: 993px) and (max-width: 1199px) {
   .pawcast-listing:last-child {
-
     max-width: 32%;
   }
+  /* Removing spacing at the bottom of the "paw-listings" div */
+  .pawcast-listing:last-child h3 {
+    min-height: auto;
+  }
 }
-
-
-
-
 /* Large devices (small laptops, 992px and BELOW!) */
 @media screen and (max-width: 992px) {
-  
   /* Pet Happy Section - Reordering the image to appear after the text */
-
   .image-pets-happy {
     order: 2;
   }
-
   /* Pet Happy Section - Styling the Image */
   .image-pets-happy img {
     max-width: 400px;
@@ -516,3 +371,20 @@ full width thus making it appear to be the same width as the other "pawcast-list
   }
 }
 
+/* Small devices, cell phone (770px screens only) */
+@media screen and (max-width: 770px) {
+  /* Removing the min-height restriction of the H3 of the "paw-listings" div */
+  .pawcast-listing h3 {
+    min-height: auto;
+  }
+
+  /* Adding some spacing at the bottom of the "paw-listings" div */
+  .pawcast-listing {
+    margin-bottom: 30px;
+  }
+
+  /* Removing spacing at the bottom of the "paw-listings" div */
+  .pawcast-listing:last-child {
+    margin-bottom: 0;
+  }
+}
