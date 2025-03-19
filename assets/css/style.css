@@ -209,10 +209,7 @@ In addition, I made it so that if the user hovers over the parent "paw-listing",
 .button-container .skew-button .play-icon {
   margin-right: 10px;
 }
-#fix-white-bg {
-  mix-blend-mode: darken;
-  width: 179px;
-}
+
 /* Pawcast Section */
 #pawcast {
   background-color: #fefef1;
@@ -257,6 +254,12 @@ In addition, I made it so that if the user hovers over the parent "paw-listing",
 #voted-best {
   gap: 30px;
 }
+
+/* Voted Best - Lottie animation of the proud dog walking image */
+#voted-best .lottie-player {
+  margin-bottom: -40px;
+}
+
 /* Voted Best - Background of the proud dog walking image */
 #voted-best .proud-dog {
   background-image: url(https://jtraveler.github.io/project-1/assets/images/homepage-shape-2-for-dog.svg);
@@ -264,7 +267,7 @@ In addition, I made it so that if the user hovers over the parent "paw-listing",
   background-size: 100% 419px;
   background-position: center;
   height: 419px;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
 }
 /* Voted Best - The wreath shell */
 #voted-best .wreath-review {
