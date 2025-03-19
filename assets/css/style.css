@@ -78,7 +78,7 @@ header {
   margin-top: -60px; /* Moves the header up to remove the white empty space since the nav is position reletive  */
   padding-top: 100px;
 
-  background-image: url(/assets/images/background-paws.svg);
+  background-image: url(https://jtraveler.github.io/project-1/assets/images/background-paws.svg);
   background-repeat: no-repeat;
   background-size: 1849px;
   background-position: bottom -193px right -10px;
@@ -89,7 +89,7 @@ header p {
 }
 /* Dog's background shape in the header */
 header .lottie-dog1 {
-  background-image: url(/assets/images/homepage-shape-1-for-dog.svg);
+  background-image: url(https://jtraveler.github.io/project-1/assets/images/homepage-shape-1-for-dog.svg);
   background-repeat: no-repeat;
   background-size: 100% 340px;
   background-position: bottom 50px center;
@@ -259,7 +259,7 @@ In addition, I made it so that if the user hovers over the parent "paw-listing",
 }
 /* Voted Best - Background of the proud dog walking image */
 #voted-best .proud-dog {
-  background-image: url(/assets/images/homepage-shape-2-for-dog.svg);
+  background-image: url(https://jtraveler.github.io/project-1/assets/images/homepage-shape-2-for-dog.svg);
   background-repeat: no-repeat;
   background-size: 100% 419px;
   background-position: center;
