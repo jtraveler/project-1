@@ -590,25 +590,42 @@
     ></script>
 
     <script>
+      // Wait until after the page is fully loaded
       window.addEventListener("load", function () {
-        // Load Font Awesome
-        const fontAwesomeScript = document.createElement("script");
-        fontAwesomeScript.src = "https://kit.fontawesome.com/3b20d96fa9.js";
-        fontAwesomeScript.crossOrigin = "anonymous";
-        document.body.appendChild(fontAwesomeScript);
+        // Use requestIdleCallback if available for better timing
+        const loadScripts = function () {
+          // Add a small timeout to further ensure page metrics are completed
+          setTimeout(function () {
+            // Load Font Awesome with low priority
+            const fontAwesomeScript = document.createElement("script");
+            fontAwesomeScript.src = "https://kit.fontawesome.com/3b20d96fa9.js";
+            fontAwesomeScript.crossOrigin = "anonymous";
+            fontAwesomeScript.fetchPriority = "low"; // Indicate low priority
+            document.body.appendChild(fontAwesomeScript);
 
-        // Load Lottie Player
-        const lottieScript = document.createElement("script");
-        lottieScript.src =
-          "https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs";
-        lottieScript.type = "module";
-        document.body.appendChild(lottieScript);
+            // Load Lottie Player with low priority
+            const lottieScript = document.createElement("script");
+            lottieScript.src =
+              "https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs";
+            lottieScript.type = "module";
+            lottieScript.fetchPriority = "low"; // Indicate low priority
+            document.body.appendChild(lottieScript);
 
-        // Load Bootstrap Lightbox
-        const lightboxScript = document.createElement("script");
-        lightboxScript.src =
-          "https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js";
-        document.body.appendChild(lightboxScript);
+            // Load Bootstrap Lightbox with low priority
+            const lightboxScript = document.createElement("script");
+            lightboxScript.src =
+              "https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js";
+            lightboxScript.fetchPriority = "low"; // Indicate low priority
+            document.body.appendChild(lightboxScript);
+          }, 100);
+        };
+
+        // Use requestIdleCallback if available, otherwise just run the function
+        if ("requestIdleCallback" in window) {
+          requestIdleCallback(loadScripts);
+        } else {
+          loadScripts();
+        }
       });
     </script>
   </body>
