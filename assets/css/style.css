@@ -351,6 +351,9 @@ footer {
   /* Sets the width of the dog background shape for the mobile screens */
   header .lottie-dog1 {
     background-size: 100% 360px;
+    /* The width and height is needed since the lottie is loading last, the layout won't shift */
+    width: 570px;
+    height: 570px;
   }
 }
 /* Special breakpoint only for the last "pawcast-listing" div so that it doesn't span 
