@@ -589,24 +589,27 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Font Awesome kit -->
-    <script
-      defer
-      src="https://kit.fontawesome.com/3b20d96fa9.js"
-      crossorigin="anonymous"
-    ></script>
+    <script>
+      window.addEventListener("load", function () {
+        // Load Font Awesome
+        const fontAwesomeScript = document.createElement("script");
+        fontAwesomeScript.src = "https://kit.fontawesome.com/3b20d96fa9.js";
+        fontAwesomeScript.crossOrigin = "anonymous";
+        document.body.appendChild(fontAwesomeScript);
 
-    <!-- Lottie Player Script -->
-    <script
-      defer
-      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
-      type="module"
-    ></script>
+        // Load Lottie Player
+        const lottieScript = document.createElement("script");
+        lottieScript.src =
+          "https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs";
+        lottieScript.type = "module";
+        document.body.appendChild(lottieScript);
 
-    <!-- For the Bootstrap lightbox effect - source: https://trvswgnr.github.io/bs5-lightbox/ -->
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"
-    ></script>
+        // Load Bootstrap Lightbox
+        const lightboxScript = document.createElement("script");
+        lightboxScript.src =
+          "https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js";
+        document.body.appendChild(lightboxScript);
+      });
+    </script>
   </body>
 </html>
