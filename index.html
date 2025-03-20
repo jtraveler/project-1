@@ -17,6 +17,21 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Proloading critical images -->
+    <link
+      rel="preload"
+      href="assets/lottie/lottie-dog-sitting-1742425692108.lottie"
+      as="fetch"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/images/midjourney-woman-and-dog-1.webp"
+      as="image"
+      type="image/webp"
+    />
+    <link rel="preload" href="assets/images/background-paws.svg" as="image" />
   </head>
   <body class="d-flex flex-column min-vh-100">
     <nav id="navbar" class="navbar navbar-expand-lg">
@@ -150,6 +165,8 @@
             src="assets/images/midjourney-woman-and-dog-1.webp"
             alt="woman walking dog"
             loading="lazy"
+            width="600"
+            height="400"
           />
         </div>
 
