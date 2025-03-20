@@ -82,6 +82,7 @@ header {
   background-repeat: no-repeat;
   background-size: 1849px;
   background-position: bottom -193px right -10px;
+  overflow: hidden; /* Prevents lottie animation from overspilling causing scrollbars */
 }
 /* The size of the paragrph in the header */
 header p {
@@ -93,6 +94,9 @@ header .lottie-dog1 {
   background-repeat: no-repeat;
   background-size: 100% 340px;
   background-position: bottom 50px center;
+  overflow: hidden;
+  display: flex;
+  min-height: 419px;
 }
 /* The div with the dog in the header */
 header .lottie-dog1 img {
