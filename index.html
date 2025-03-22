@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="dog walking services" />
+    <meta
+      name="description"
+      content="Offering dog walking, doggi daycare, dog training and vet care services. Voted the best Dog walkers in New York City."
+    />
 
     <title>NYC Dog Pro</title>
 
@@ -26,7 +29,19 @@
       crossorigin
     />
 
-    <link rel="preload" href="assets/images/background-paws.svg" as="image" />
+    <style>
+      /* Dog's background shape in the header */
+      header {
+        margin-top: -60px; /* Moves the header up to remove the white empty space since the nav is position reletive  */
+        padding-top: 100px;
+
+        background-image: url(https://jtraveler.github.io/project-1/assets/images/background-paws.svg);
+        background-repeat: no-repeat;
+        background-size: 1849px;
+        background-position: bottom -193px right -10px;
+        overflow: hidden; /* Prevents lottie animation from overspilling causing scrollbars */
+      }
+    </style>
   </head>
   <body class="d-flex flex-column min-vh-100">
     <nav id="navbar" class="navbar navbar-expand-lg">
@@ -117,7 +132,11 @@
               <div class="col-12 col-md-6 service-thumbnail">
                 <div class="icon-shell icon-service-bg1">
                   <div class="service-icon">
-                    <i class="fa-solid fa-shoe-prints icon-service-icon1"></i>
+                    <img
+                      src="assets/images/font-awesome-feet.svg"
+                      class="icon-service-icon1"
+                      alt="icon showing shoes for walking"
+                    />
                   </div>
                 </div>
                 <h3>Dog Walking</h3>
@@ -126,7 +145,11 @@
               <div class="col-12 col-md-6 service-thumbnail">
                 <div class="icon-shell icon-service-bg2">
                   <div class="service-icon">
-                    <i class="fa-solid fa-house icon-service-icon2"></i>
+                    <img
+                      src="assets/images/font-awesome-house.svg"
+                      class="icon-service-icon2"
+                      alt="icon showing a house for doggie daycare"
+                    />
                   </div>
                 </div>
                 <h3>Doggie Daycare</h3>
@@ -135,7 +158,11 @@
               <div class="col-12 col-md-6 service-thumbnail">
                 <div class="icon-shell icon-service-bg3">
                   <div class="service-icon">
-                    <i class="fa-solid fa-trophy icon-service-icon3"></i>
+                    <img
+                      src="assets/images/font-awesome-trophy.svg"
+                      class="icon-service-icon3"
+                      alt="icon showing a trophy for dog training"
+                    />
                   </div>
                 </div>
                 <h3>Dog Training</h3>
@@ -144,7 +171,11 @@
               <div class="col-12 col-md-6 service-thumbnail">
                 <div class="icon-shell icon-service-bg4">
                   <div class="service-icon">
-                    <i class="fa-solid fa-stethoscope icon-service-icon4"></i>
+                    <img
+                      src="assets/images/font-awesome-stethoscope.svg"
+                      class="icon-service-icon4"
+                      alt="icon showing a stethoscope for vet care"
+                    />
                   </div>
                 </div>
                 <h3>Vet Care</h3>
@@ -173,13 +204,19 @@
             tincidunt. Duis eget tortor vel ante laoreet elementum ut ut tellus.
           </p>
           <div class="d-flex align-items-center mb-2">
-            <i class="fa-solid fa-circle-check me-2"></i>info about item
+            <img src="assets/images/font-awesome-checkmark.svg"
+            class="icon-checkmark me-2"" alt="icon of a checkmark" /> info about
+            item
           </div>
           <div class="d-flex align-items-center mb-2">
-            <i class="fa-solid fa-circle-check me-2"></i>info about item
+            <img src="assets/images/font-awesome-checkmark.svg"
+            class="icon-checkmark me-2"" alt="icon of a checkmark" /> info about
+            item
           </div>
           <div class="d-flex align-items-center mb-2">
-            <i class="fa-solid fa-circle-check me-2"></i>info about item
+            <img src="assets/images/font-awesome-checkmark.svg"
+            class="icon-checkmark me-2"" alt="icon of a checkmark" /> info about
+            item
           </div>
 
           <div class="button-container button-container-big mt-3">
@@ -406,7 +443,13 @@
           <div class="col-12 col-md-4 d-flex flex-wrap review-listings">
             <div class="img-br-lg two-cents d-flex flex-column">
               <div class="two-cents-header d-flex">
-                <div class="me-auto"><i class="fa-brands fa-facebook"></i></div>
+                <div class="me-auto">
+                  <img
+                    src="assets/images/font-awesome-facebook.svg"
+                    class="icon-social-facebook"
+                    alt="icon of the Facebook logo"
+                  />
+                </div>
                 <div class="time-stamp">2 hours ago</div>
               </div>
               <div class="two-cents-body">
@@ -448,7 +491,7 @@
                     alt="yellow star outline"
                   />
                   <img
-                    src="assets/images/rating-yellow-star.svg"
+                    src="assets/images/rating-grey-star.svg"
                     alt="yellow star outline"
                   />
                 </div>
@@ -459,7 +502,13 @@
           <div class="col-12 col-md-4 d-flex flex-wrap review-listings">
             <div class="img-br-lg two-cents d-flex flex-column">
               <div class="two-cents-header d-flex">
-                <div class="me-auto"><i class="fa-brands fa-facebook"></i></div>
+                <div class="me-auto">
+                  <img
+                    src="assets/images/font-awesome-facebook.svg"
+                    class="icon-social-facebook"
+                    alt="icon of the Facebook logo"
+                  />
+                </div>
                 <div class="time-stamp">2 hours ago</div>
               </div>
               <div class="two-cents-body">
@@ -512,7 +561,13 @@
           <div class="col-12 col-md-4 d-flex flex-wrap review-listings">
             <div class="img-br-lg two-cents d-flex flex-column">
               <div class="two-cents-header d-flex">
-                <div class="me-auto"><i class="fa-brands fa-facebook"></i></div>
+                <div class="me-auto">
+                  <img
+                    src="assets/images/font-awesome-facebook.svg"
+                    class="icon-social-facebook"
+                    alt="icon of the Facebook logo"
+                  />
+                </div>
                 <div class="time-stamp">2 hours ago</div>
               </div>
               <div class="two-cents-body">
@@ -589,38 +644,15 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- F'in sweet Webflow Hacks -->
-    <script>
-      // if viewportWidth width <= 576
-      if (window.innerWidth <= 576) {
-        // load mobile script
-        // Using regular images for mobile rather than scripts
-      } else {
-        // viewportWidth width > 576
-        // load desktop script
-        // Lottie script
-        loadScriptFile(
-          "https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs",
-          "module"
-        );
-        //FontAwesome script
-        loadScriptFile("https://kit.fontawesome.com/3b20d96fa9.js");
-        //Lightbox effect script
-        loadScriptFile(
-          "https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"
-        );
-      }
-      // loadScriptFile func
-      function loadScriptFile(src, type) {
-        // create element <script>
-        const $script = document.createElement("script");
-        // add type attribute
-        if (type) $script.setAttribute("type", type);
-        // add src attribute
-        $script.setAttribute("src", src);
-        // append the <script> element to <head>
-        document.head.appendChild($script);
-      }
-    </script>
+    <!-- For the Bootstrap lightbox effect - source: https://trvswgnr.github.io/bs5-lightbox/ -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"
+    ></script>
+
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
   </body>
 </html>
