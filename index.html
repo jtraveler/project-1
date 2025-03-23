@@ -21,14 +21,6 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!-- Proloading critical images -->
-    <link
-      rel="preload"
-      href="assets/lottie/lottie-dog-sitting-1742425692108.lottie"
-      as="fetch"
-      crossorigin
-    />
-
     <style>
       /* Dog's background shape in the header */
       header {
@@ -72,6 +64,9 @@
               <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#services">Pawcast</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -81,7 +76,7 @@
     <header class="d-flex container-fluid section pb-5">
       <div class="container d-flex flex-wrap pt-5 px-0">
         <div class="col-12 col-lg-6 m-auto">
-          <h1>Your Dog is Part of Our Family.</h1>
+          <h1 class="h1-homepage">Your Dog is Part of Our Family.</h1>
           <p class="mb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -198,25 +193,34 @@
 
         <div class="col-12 col-lg-6 mb-5">
           <h2 class="pt-5">We Make Your Pet Happy</h2>
-          <p>
+          <p class="mb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit
             amet tempor leo. Suspendisse vestibulum libero eget rutrum
             tincidunt. Duis eget tortor vel ante laoreet elementum ut ut tellus.
           </p>
-          <div class="d-flex align-items-center mb-2">
-            <img src="assets/images/font-awesome-checkmark.svg"
-            class="icon-checkmark me-2"" alt="icon of a checkmark" /> info about
-            item
+          <div class="d-flex align-items-center mb-4">
+            <img
+              src="assets/images/font-awesome-checkmark.svg"
+              class="icon-checkmark me-2"
+              alt="icon of a checkmark"
+            />
+            info about item
           </div>
-          <div class="d-flex align-items-center mb-2">
-            <img src="assets/images/font-awesome-checkmark.svg"
-            class="icon-checkmark me-2"" alt="icon of a checkmark" /> info about
-            item
+          <div class="d-flex align-items-center mb-4">
+            <img
+              src="assets/images/font-awesome-checkmark.svg"
+              class="icon-checkmark me-2"
+              alt="icon of a checkmark"
+            />
+            info about item
           </div>
-          <div class="d-flex align-items-center mb-2">
-            <img src="assets/images/font-awesome-checkmark.svg"
-            class="icon-checkmark me-2"" alt="icon of a checkmark" /> info about
-            item
+          <div class="d-flex align-items-center mb-4">
+            <img
+              src="assets/images/font-awesome-checkmark.svg"
+              class="icon-checkmark me-2"
+              alt="icon of a checkmark"
+            />
+            info about item
           </div>
 
           <div class="button-container button-container-big mt-3">
@@ -250,7 +254,11 @@
                 class="d-flex below-image flex-wrap align-items-center px-xl-2"
               >
                 <div class="icon me-2">
-                  <i class="fa-solid fa-volume-high"></i>
+                  <img
+                    src="assets/images/font-awesome-speaker.svg"
+                    class="icon-speaker"
+                    alt="icon of an audio speaker"
+                  />
                 </div>
                 <div class="subject me-auto">
                   <div
@@ -286,7 +294,11 @@
                 class="d-flex below-image flex-wrap align-items-center px-xl-2"
               >
                 <div class="icon me-2">
-                  <i class="fa-solid fa-volume-high"></i>
+                  <img
+                    src="assets/images/font-awesome-speaker.svg"
+                    class="icon-speaker"
+                    alt="icon of an audio speaker"
+                  />
                 </div>
                 <div class="subject me-auto">
                   <div
@@ -324,7 +336,11 @@
                 class="d-flex below-image flex-wrap align-items-center px-xl-2"
               >
                 <div class="icon me-2">
-                  <i class="fa-solid fa-volume-high"></i>
+                  <img
+                    src="assets/images/font-awesome-speaker.svg"
+                    class="icon-speaker"
+                    alt="icon of an audio speaker"
+                  />
                 </div>
                 <div class="subject me-auto">
                   <div
@@ -360,7 +376,11 @@
                 class="d-flex below-image flex-wrap align-items-center px-xl-2"
               >
                 <div class="icon me-2">
-                  <i class="fa-solid fa-volume-high"></i>
+                  <img
+                    src="assets/images/font-awesome-speaker.svg"
+                    class="icon-speaker"
+                    alt="icon of an audio speaker"
+                  />
                 </div>
                 <div class="subject me-auto">
                   <div
@@ -411,7 +431,7 @@
                 src="assets/lottie/lottie-dog-walking-1742421998444.lottie"
                 background="transparent"
                 speed=".45"
-                style="width: 230px; height: auto"
+                class="dog-walk"
                 loop
                 autoplay
               ></dotlottie-player>

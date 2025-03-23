@@ -30,12 +30,22 @@ h6 {
   font-family: var(--secondary-font);
   color: #333;
 }
+/* This is the H1 base */
 h1 {
-  font-size: 5em;
   font-weight: 700;
   line-height: 90px;
   margin-bottom: 30px;
 }
+
+/* This is the H1 for the homepage */
+.h1-homepage {
+  font-size: 5em;
+}
+/* This is the H1 for the interior pages */
+.h1-interior {
+  font-size: 4em;
+}
+
 h2 {
   font-size: 38px;
   font-weight: 700;
@@ -156,6 +166,10 @@ header .lottie-dog1 img {
 .icon-checkmark {
   width: 18px;
 }
+
+.icon-speaker {
+  width: 20px;
+}
 /* Thumbnail Sections  */
 .service-thumbnail {
   margin-bottom: 1.5em;
@@ -215,7 +229,7 @@ In addition, I made it so that if the user hovers over the parent "paw-listing",
 .button-container .skew-small-opt1 {
   font-size: 14px;
   padding: 3px 9px;
-  color: #b58747;
+  color: #90662c;
 }
 /* Button - Play Icon */
 .button-container .skew-button .play-icon {
@@ -270,6 +284,11 @@ In addition, I made it so that if the user hovers over the parent "paw-listing",
 /* Voted Best - Lottie animation of the proud dog walking image */
 #voted-best .lottie-player {
   margin-bottom: -40px;
+}
+
+#voted-best .lottie-player .dog-walk {
+  width: 230px;
+  height: auto;
 }
 
 /* Voted Best - Background of the proud dog walking image */
@@ -342,6 +361,68 @@ In addition, I made it so that if the user hovers over the parent "paw-listing",
   height: 15px;
   flex-basis: 100px;
 }
+
+/* Form styling on the Contact page */
+
+#contact-container h2 {
+  margin-bottom: 30px;
+}
+/* Form Label */
+.form-label {
+  font-weight: 500;
+}
+/* Form Fields and Select Fields */
+.form-control,
+.form-select {
+  border-radius: 30px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: inherit;
+}
+/* Set the min-height of the message box in the form */
+textarea.form-control {
+  min-height: 200px;
+}
+
+.contact-left-side {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+
+.contact-left-side .happy-guy-shell {
+  height: 315px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  margin-top: auto;
+}
+
+.contact-left-side .happy-guy {
+  position: absolute;
+}
+
+.contact-left-side .happy-guy img {
+  height: 310px;
+}
+
+.contact-left-side .happy-guy-background {
+  background-color: #fbefd0;
+  border-radius: 30px;
+  height: 88%;
+  margin-top: auto;
+  width: 100%;
+
+  background-image: url(/assets/images/background-paws-bright.svg);
+  background-repeat: no-repeat;
+  background-size: 570px;
+  background-position: center;
+}
+
+.mail-airplane-lottie {
+  margin-top: -100px;
+}
 footer {
   background-color: #e6e6e6;
   min-height: 200px;
@@ -404,5 +485,12 @@ full width thus making it appear to be the same width as the other "pawcast-list
   /* Removing spacing at the bottom of the "paw-listings" div */
   .pawcast-listing:last-child {
     margin-bottom: 0;
+  }
+}
+
+/* This is for the proud dog Lottie only to move it upward on screen sizes 380 width and below */
+@media screen and (max-width: 390px) {
+  #voted-best .proud-dog {
+    margin-top: -45px;
   }
 }
