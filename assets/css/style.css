@@ -7,6 +7,8 @@
   --primary-color: #3a2620; /* dark brown */
   --secondary-color: #aa9581; /* light brown */
   --faded-grey-color: rgb(103 103 103);
+  --secondary-color-tag-text: #90662c;
+  --secondary-color-tag-background: #fbf0db;
 }
 /* Global styles */
 body {
@@ -53,7 +55,7 @@ h2 {
 }
 h3 {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 22px;
 }
 /* Navbar */
 #navbar {
@@ -198,13 +200,24 @@ header .lottie-dog1 img {
   background-color: #ffda55; /* For yellow button */
   border: 2px solid #ffda55;
 }
-/* Button - Small - Option 1 - This requires the "Button - Base" paired in the same div */
-.button-container-small-opt1 {
-  background-color: #fbf0db;
-  border: 0px;
+
+.pawcast-tag-base {
+  font-size: 14px;
+  padding: 3px 9px;
 }
+
+/* Pawcast Tag - This requires the "button-container" paired in the same div */
+.button-container-small {
+  background-color: var(--secondary-color-tag-background);
+}
+
+/* Paw Tag - Text - This requires the "skew-button" and "pawcast-tag-base" - Base paired in the same div */
+.button-container-small .skew-small-text {
+  color: var(--secondary-color-tag-text);
+}
+
 /* Button - Big Hover - This hover is only for the "Button - Big".
-In addition, I made it so that if the user hovers over the parent "paw-listing", the clid button hover is triggered */
+In addition, I made it so that if the user hovers over the parent "pawcast-listing", the clid button hover is triggered */
 .button-container-big:hover,
 .pawcast-listing:hover .button-container-big {
   background-color: white;
@@ -225,12 +238,7 @@ In addition, I made it so that if the user hovers over the parent "paw-listing",
   font-size: 14px;
   font-weight: 600;
 }
-/* Button - Details - Small - Option 1 - This requires the "Button - Details" - Base paired in the same div */
-.button-container .skew-small-opt1 {
-  font-size: 14px;
-  padding: 3px 9px;
-  color: #90662c;
-}
+
 /* Button - Play Icon */
 .button-container .skew-button .play-icon {
   margin-right: 10px;
@@ -250,13 +258,13 @@ In addition, I made it so that if the user hovers over the parent "paw-listing",
 }
 
 #pawcast h2 {
-  flex-basis: 328px;
+  flex-basis: 398px;
   margin-bottom: 0;
 }
 /* This div within the "pawcast-listing" div */
 .pawcast-listing {
   flex: 1 1 auto;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 /* The are below the image in the "pawcast-listing" div */
 .pawcast-listing .below-image {
@@ -268,12 +276,14 @@ In addition, I made it so that if the user hovers over the parent "paw-listing",
 .pawcast-listing .date {
   flex-basis: 75px;
   text-align: right;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 /* This is H3 of the "paw-listings" div */
 .pawcast-listing h3 {
   margin-bottom: 20px;
-  min-height: 90px;
+  min-height: 80px;
 }
 
 /* Voted Best Section  */
@@ -299,6 +309,7 @@ In addition, I made it so that if the user hovers over the parent "paw-listing",
   background-position: center;
   height: 419px;
   padding-bottom: 70px;
+  margin-top: 30px;
 }
 /* Voted Best - The wreath shell */
 #voted-best .wreath-review {
@@ -421,18 +432,36 @@ textarea.form-control {
 }
 
 .mail-airplane-lottie {
-  margin-top: -100px;
+  margin-top: -150px;
+
+  background-image: url(https://jtraveler.github.io/project-1/assets/images/homepage-shape-2-for-dog.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 339px;
+  background-position: center;
+  height: 519px;
+  padding-top: 20px;
 }
+
+.pawcast-walk-lottie {
+  margin-top: -100px;
+  background-image: url(https://jtraveler.github.io/project-1/assets/images/homepage-shape-2-for-dog.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 339px;
+  background-position: center;
+  height: 519px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
 footer {
   background-color: #e6e6e6;
   min-height: 200px;
-  margin-top: 40px;
 }
 /* Large devices (small laptops, 992px and UP!) */
 @media screen and (min-width: 992px) {
   /* Sets the flex basis on the "pawcast-listing" div for small laptop screens */
   .pawcast-listing {
-    flex-basis: 222px;
+    flex-basis: 240px;
   }
 }
 /* XL Large devices (1200px XL screens only) */
@@ -445,24 +474,20 @@ footer {
     height: 570px;
   }
 }
-/* Special breakpoint only for the last "pawcast-listing" div so that it doesn't span 
-full width thus making it appear to be the same width as the other "pawcast-listing" divs */
+/* Special breakpoint for the Pawcast "pawcast-listing" divs to 
+make sure that they are all the same width when wrapping to a new row */
 @media (min-width: 993px) and (max-width: 1199px) {
-  .pawcast-listing:last-child {
-    max-width: 32%;
-  }
-  /* Removing spacing at the bottom of the "paw-listings" div */
-  .pawcast-listing:last-child h3 {
-    min-height: auto;
+  .pawcast-listing {
+    max-width: 292px;
   }
 }
 /* Large devices (small laptops, 992px and BELOW!) */
 @media screen and (max-width: 992px) {
-  /* Pet Happy Section - Reordering the image to appear after the text */
+  /* Homepage - Pets Happy Section - Reordering the image to appear after the text */
   .image-pets-happy {
     order: 2;
   }
-  /* Pet Happy Section - Styling the Image */
+  /* Homepage - Pets Happy Section - Styling the Image */
   .image-pets-happy img {
     max-width: 400px;
     margin: 0 auto;

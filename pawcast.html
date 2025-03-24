@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Offering dog walking, doggi daycare, dog training and vet care services. Voted the best Dog walkers in New York City."
+    />
+
+    <title>NYC Dog Pro</title>
+
+    <!-- Bootstrap CSS Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+      /* Dog's background shape in the header */
+      header {
+        margin-top: -60px; /* Moves the header up to remove the white empty space since the nav is position reletive  */
+        padding-top: 100px;
+
+        background-image: url(https://jtraveler.github.io/project-1/assets/images/background-paws.svg);
+        background-repeat: no-repeat;
+        background-size: 1849px;
+        background-position: bottom -193px right -10px;
+        overflow: hidden; /* Prevents lottie animation from overspilling causing scrollbars */
+      }
+    </style>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav id="navbar" class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"> Logo Placement </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="pawcast.html" aria-current="page"
+                >Pawcast</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="d-flex container-fluid section pb-5">
+      <div class="container d-flex flex-wrap pt-5 px-0 float-start">
+        <div class="col-12 m-auto">
+          <h1 class="h1-interior">Pawcast.</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="pb-0">
+        <div class="container d-flex flex-wrap">
+          <div class="col-12 col-lg-6 pe-lg-4">
+            <h2>Catch the Latest</h2>
+            <p>
+              Listen in on our pawcast channel as we cover a wide range of
+              topics about dog care and what dogs love. Be sure to check back
+              here every Tueday @ 2pm est. time to listen in on our live
+              pawcast. Browse below to listen to our archive of past episodes.
+            </p>
+          </div>
+          <!-- Lottie  form -->
+          <div class="col-12 col-lg-6 ps-lg-4 pt-5 pt-lg-0">
+            <div class="lottie-player pawcast-walk-lottie">
+              <!-- For standard lottie files -->
+
+              <dotlottie-player
+                src="assets/lottie/lottie-pawcast-walk-la6rfk5x1m.lottie"
+                background="transparent"
+                speed=".80"
+                class="dog-walk"
+                loop
+                autoplay
+              ></dotlottie-player>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pawcast" class="container-fluid">
+        <div class="container d-flex flex-wrap">
+          <div
+            class="pawcast-header col-12 d-flex flex-wrap align-items-center"
+          >
+            <h2>Listen to All Episodes</h2>
+          </div>
+          <div class="col-12 col-md-4 pawcast-listing">
+            <a href="#" aria-label="Plays Pawcast (Podcast)">
+              <img
+                src="assets/images/midjourney-1.webp"
+                alt="woman and dog are surprised"
+                class="mx-auto d-block img-br-lg img-fluid"
+                loading="lazy"
+              />
+
+              <div
+                class="d-flex below-image flex-wrap align-items-center px-xl-2"
+              >
+                <div class="icon me-2">
+                  <img
+                    src="assets/images/font-awesome-speaker.svg"
+                    class="icon-speaker"
+                    alt="icon of an audio speaker"
+                  />
+                </div>
+
+                <div class="button-container button-container-small me-auto">
+                  <button class="skew-button skew-small-text pawcast-tag-base">
+                    Runtime: 5m 42s
+                  </button>
+                </div>
+
+                <div class="date">March 5</div>
+              </div>
+              <h3>Picking a dog that fits to your personality.</h3>
+            </a>
+            <div class="button-container button-container-big mt-1">
+              <a href="#" aria-label="Plays Pawcast (Podcast)">
+                <button class="skew-button skew-big">
+                  <span class="play-icon">▶</span> Play
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 pawcast-listing">
+            <a href="#" aria-label="Plays Pawcast (Podcast)">
+              <img
+                src="assets/images/midjourney-2.webp"
+                alt="man running with dog through the city"
+                class="mx-auto d-block img-br-lg img-fluid"
+                loading="lazy"
+              />
+
+              <div
+                class="d-flex below-image flex-wrap align-items-center px-xl-2"
+              >
+                <div class="icon me-2">
+                  <img
+                    src="assets/images/font-awesome-speaker.svg"
+                    class="icon-speaker"
+                    alt="icon of an audio speaker"
+                  />
+                </div>
+
+                <div class="button-container button-container-small me-auto">
+                  <button class="skew-button skew-small-text pawcast-tag-base">
+                    Runtime: 5m 42s
+                  </button>
+                </div>
+
+                <div class="date">March 5</div>
+              </div>
+              <h3>
+                Our city guide for jogging with your dog and the best routes.
+              </h3>
+            </a>
+            <div class="button-container button-container-big mt-1">
+              <a href="#" aria-label="Plays Pawcast (Podcast)">
+                <button class="skew-button skew-big">
+                  <span class="play-icon">▶</span> Play
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 pawcast-listing">
+            <a href="#" aria-label="Plays Pawcast (Podcast)">
+              <img
+                src="assets/images/midjourney-3.webp"
+                alt="dog on an airplane"
+                class="mx-auto d-block img-br-lg img-fluid"
+                loading="lazy"
+              />
+
+              <div
+                class="d-flex below-image flex-wrap align-items-center px-xl-2"
+              >
+                <div class="icon me-2">
+                  <img
+                    src="assets/images/font-awesome-speaker.svg"
+                    class="icon-speaker"
+                    alt="icon of an audio speaker"
+                  />
+                </div>
+
+                <div class="button-container button-container-small me-auto">
+                  <button class="skew-button skew-small-text pawcast-tag-base">
+                    Runtime: 5m 42s
+                  </button>
+                </div>
+
+                <div class="date">March 5</div>
+              </div>
+              <h3>Tips and tricks for traveling with your furry friend.</h3>
+            </a>
+            <div class="button-container button-container-big mt-1">
+              <a href="#" aria-label="Plays Pawcast (Podcast)">
+                <button class="skew-button skew-big">
+                  <span class="play-icon">▶</span> Play
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 pawcast-listing">
+            <a href="#" aria-label="Plays Pawcast (Podcast)">
+              <img
+                src="assets/images/midjourney-4.webp"
+                alt="girl laying with dog"
+                class="mx-auto d-block img-br-lg img-fluid"
+                loading="lazy"
+              />
+
+              <div
+                class="d-flex below-image flex-wrap align-items-center px-xl-2"
+              >
+                <div class="icon me-2">
+                  <img
+                    src="assets/images/font-awesome-speaker.svg"
+                    class="icon-speaker"
+                    alt="icon of an audio speaker"
+                  />
+                </div>
+
+                <div class="button-container button-container-small me-auto">
+                  <button class="skew-button skew-small-text pawcast-tag-base">
+                    Runtime: 5m 42s
+                  </button>
+                </div>
+
+                <div class="date">March 5</div>
+              </div>
+              <h3>We break down the best dog breeds for children.</h3>
+            </a>
+            <div class="button-container button-container-big mt-1">
+              <a href="#" aria-label="Plays Pawcast (Podcast)">
+                <button class="skew-button skew-big">
+                  <span class="play-icon">▶</span> Play
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 pawcast-listing">
+            <a href="#" aria-label="Plays Pawcast (Podcast)">
+              <img
+                src="assets/images/midjourney-1.webp"
+                alt="woman and dog are surprised"
+                class="mx-auto d-block img-br-lg img-fluid"
+                loading="lazy"
+              />
+
+              <div
+                class="d-flex below-image flex-wrap align-items-center px-xl-2"
+              >
+                <div class="icon me-2">
+                  <img
+                    src="assets/images/font-awesome-speaker.svg"
+                    class="icon-speaker"
+                    alt="icon of an audio speaker"
+                  />
+                </div>
+
+                <div class="button-container button-container-small me-auto">
+                  <button class="skew-button skew-small-text pawcast-tag-base">
+                    Runtime: 5m 42s
+                  </button>
+                </div>
+
+                <div class="date">March 5</div>
+              </div>
+              <h3>Picking a dog that fits to your personality.</h3>
+            </a>
+            <div class="button-container button-container-big mt-1">
+              <a href="#" aria-label="Plays Pawcast (Podcast)">
+                <button class="skew-button skew-big">
+                  <span class="play-icon">▶</span> Play
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 pawcast-listing">
+            <a href="#" aria-label="Plays Pawcast (Podcast)">
+              <img
+                src="assets/images/midjourney-2.webp"
+                alt="man running with dog through the city"
+                class="mx-auto d-block img-br-lg img-fluid"
+                loading="lazy"
+              />
+
+              <div
+                class="d-flex below-image flex-wrap align-items-center px-xl-2"
+              >
+                <div class="icon me-2">
+                  <img
+                    src="assets/images/font-awesome-speaker.svg"
+                    class="icon-speaker"
+                    alt="icon of an audio speaker"
+                  />
+                </div>
+
+                <div class="button-container button-container-small me-auto">
+                  <button class="skew-button skew-small-text pawcast-tag-base">
+                    Runtime: 5m 42s
+                  </button>
+                </div>
+
+                <div class="date">March 5</div>
+              </div>
+              <h3>
+                Our city guide for jogging with your dog and the best routes.
+              </h3>
+            </a>
+            <div class="button-container button-container-big mt-1">
+              <a href="#" aria-label="Plays Pawcast (Podcast)">
+                <button class="skew-button skew-big">
+                  <span class="play-icon">▶</span> Play
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 pawcast-listing">
+            <a href="#" aria-label="Plays Pawcast (Podcast)">
+              <img
+                src="assets/images/midjourney-3.webp"
+                alt="dog on an airplane"
+                class="mx-auto d-block img-br-lg img-fluid"
+                loading="lazy"
+              />
+
+              <div
+                class="d-flex below-image flex-wrap align-items-center px-xl-2"
+              >
+                <div class="icon me-2">
+                  <img
+                    src="assets/images/font-awesome-speaker.svg"
+                    class="icon-speaker"
+                    alt="icon of an audio speaker"
+                  />
+                </div>
+
+                <div class="button-container button-container-small me-auto">
+                  <button class="skew-button skew-small-text pawcast-tag-base">
+                    Runtime: 5m 42s
+                  </button>
+                </div>
+
+                <div class="date">March 5</div>
+              </div>
+              <h3>Tips and tricks for traveling with your furry friend.</h3>
+            </a>
+            <div class="button-container button-container-big mt-1">
+              <a href="#" aria-label="Plays Pawcast (Podcast)">
+                <button class="skew-button skew-big">
+                  <span class="play-icon">▶</span> Play
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 pawcast-listing">
+            <a href="#" aria-label="Plays Pawcast (Podcast)">
+              <img
+                src="assets/images/midjourney-4.webp"
+                alt="girl laying with dog"
+                class="mx-auto d-block img-br-lg img-fluid"
+                loading="lazy"
+              />
+
+              <div
+                class="d-flex below-image flex-wrap align-items-center px-xl-2"
+              >
+                <div class="icon me-2">
+                  <img
+                    src="assets/images/font-awesome-speaker.svg"
+                    class="icon-speaker"
+                    alt="icon of an audio speaker"
+                  />
+                </div>
+
+                <div class="button-container button-container-small me-auto">
+                  <button class="skew-button skew-small-text pawcast-tag-base">
+                    Runtime: 5m 42s
+                  </button>
+                </div>
+
+                <div class="date">March 5</div>
+              </div>
+              <h3>We break down the best dog breeds for children.</h3>
+            </a>
+            <div class="button-container button-container-big mt-1">
+              <a href="#" aria-label="Plays Pawcast (Podcast)">
+                <button class="skew-button skew-big">
+                  <span class="play-icon">▶</span> Play
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <a href="https://player.vimeo.com/video/80629469" data-toggle="lightbox"
+          >City Lights - from Colin Rich (using embed link)</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://vimeo.com/80629469"
+          data-remote="https://player.vimeo.com/video/80629469"
+          data-toggle="lightbox"
+          >City Lights - from Colin Rich</a
+        >
+        (with recommended <code>data-remote</code> setting)
+      </p>
+    </footer>
+
+    <!-- Bootstrap JS Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- For the Bootstrap lightbox effect - source: https://trvswgnr.github.io/bs5-lightbox/ -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"
+    ></script>
+
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+  </body>
+</html>
