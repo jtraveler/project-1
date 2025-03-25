@@ -57,6 +57,20 @@ h3 {
   font-weight: 700;
   font-size: 22px;
 }
+
+.navbar-brand {
+  font-weight: 900;
+  font-size: 24px;
+  font-family: "Nunito", "san-serif";
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-brand img {
+  width: 25px;
+  height: auto;
+  margin-right: 10px;
+}
 /* Navbar */
 #navbar {
   position: relative;
@@ -176,11 +190,11 @@ header .lottie-dog1 img {
 .service-thumbnail {
   margin-bottom: 1.5em;
 }
-/* Pet Happy Section - Styling the Image */
-.image-pets-happy img {
+/* Large featured image with people inside tof the egg shape */
+.image-large-feature img {
   width: 100%;
+  height: auto;
   position: relative;
-  top: -50px;
 }
 /* Border radius for large images */
 .img-br-lg {
@@ -395,12 +409,14 @@ textarea.form-control {
   min-height: 200px;
 }
 
+/* Contact Page - Left Side */
 .contact-left-side {
   display: flex;
   flex-direction: column;
   padding-bottom: 25px;
 }
 
+/* Contact Page - Happy guy shell */
 .contact-left-side .happy-guy-shell {
   height: 315px;
   display: flex;
@@ -410,30 +426,32 @@ textarea.form-control {
   margin-top: auto;
 }
 
+/* Contact Page - Happy guy */
 .contact-left-side .happy-guy {
   position: absolute;
 }
 
+/* Contact Page - Happy guy - image */
 .contact-left-side .happy-guy img {
   height: 310px;
 }
 
+/* Contact Page - Happy guy background */
 .contact-left-side .happy-guy-background {
   background-color: #fbefd0;
   border-radius: 30px;
   height: 88%;
   margin-top: auto;
   width: 100%;
-
   background-image: url(/assets/images/background-paws-bright.svg);
   background-repeat: no-repeat;
   background-size: 570px;
   background-position: center;
 }
 
+/* Success Page - Evelope airplane lottie */
 .mail-airplane-lottie {
   margin-top: -150px;
-
   background-image: url(https://jtraveler.github.io/project-1/assets/images/homepage-shape-2-for-dog.svg);
   background-repeat: no-repeat;
   background-size: 100% 339px;
@@ -442,6 +460,7 @@ textarea.form-control {
   padding-top: 20px;
 }
 
+/* Pawcast page - Walkman lottie */
 .pawcast-walk-lottie {
   margin-top: -100px;
   background-image: url(https://jtraveler.github.io/project-1/assets/images/homepage-shape-2-for-dog.svg);
@@ -453,17 +472,88 @@ textarea.form-control {
   padding-bottom: 50px;
 }
 
+/* About page - Dog kiss lottie */
+.dog-kiss-lottie {
+  margin-top: -70px;
+  background-image: url(https://jtraveler.github.io/project-1/assets/images/homepage-shape-2-for-dog.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 339px;
+  background-position: center;
+  height: 419px;
+  max-width: 419px;
+  overflow: hidden;
+}
+/* About page - Dog kiss lottie player */
+.dog-kiss-lottie dotlottie-player {
+  -moz-transform: scaleX(-1); /* Flip horizotally */
+  -webkit-transform: scaleX(-1); /* Flip horizotally */
+  -o-transform: scaleX(-1); /* Flip horizotally */
+  transform: scaleX(-1); /* Flip horizotally */
+  -ms-filter: fliph; /*IE* -  Flip horizotally */
+  filter: fliph; /*IE - Flip horizotally */
+  width: 137%;
+  height: 137%;
+  margin-left: -106px;
+  margin-top: -55px;
+}
+
+.staff-member-shell {
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.staff-member {
+  border-radius: 15px;
+
+  min-height: 300px;
+  margin-top: 30px;
+  flex: 1 1 auto;
+}
+
+.staff-member .profile-photo img {
+  border-radius: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  border-radius: 65% 35% 32% 68% / 62% 56% 44% 38%;
+}
+
+.staff-footer {
+  align-items: center;
+  text-align: center s;
+}
+.staff-name {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.staff-title {
+  color: rgb(148, 148, 148);
+  font-size: 14px;
+}
+
 footer {
   background-color: #e6e6e6;
   min-height: 200px;
 }
-/* Large devices (small laptops, 992px and UP!) */
-@media screen and (min-width: 992px) {
-  /* Sets the flex basis on the "pawcast-listing" div for small laptop screens */
-  .pawcast-listing {
-    flex-basis: 240px;
+
+/* Official Break Point - XXL devices (1400px and UP!) */
+@media screen and (min-width: 1400px) {
+  /* Sets max width for odd number of items in a column for this screensize to make
+  sure they appear to be the same width as even numbered items within column */
+  .odd-column-fix {
+    max-width: 301px;
   }
 }
+
+/* Official Break Point - XL devices (1200px - 1400px) */
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  /* Sets max width for odd number of items in a column for this screensize to make
+  sure they appear to be the same width as even numbered items within column */
+  .odd-column-fix {
+    max-width: 256px;
+  }
+}
+
 /* XL Large devices (1200px XL screens only) */
 @media screen and (min-width: 1200px) {
   /* Sets the width of the dog background shape for the mobile screens */
@@ -474,28 +564,43 @@ footer {
     height: 570px;
   }
 }
-/* Special breakpoint for the Pawcast "pawcast-listing" divs to 
-make sure that they are all the same width when wrapping to a new row */
-@media (min-width: 993px) and (max-width: 1199px) {
-  .pawcast-listing {
+
+/* Official Break Point - L devices (992px - 1200px) */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  /* Sets max width for odd number of items in a column for this screensize to make
+  sure they appear to be the same width as even numbered items within column */
+  .odd-column-fix {
     max-width: 292px;
   }
 }
+
+/* Official Break Point - M devices (768px - 992px) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* Sets max width for odd number of items in a column for this screensize to make
+  sure they appear to be the same width as even numbered items within column */
+  .odd-column-fix {
+    max-width: 333px;
+  }
+}
+
 /* Large devices (small laptops, 992px and BELOW!) */
 @media screen and (max-width: 992px) {
-  /* Homepage - Pets Happy Section - Reordering the image to appear after the text */
-  .image-pets-happy {
+  .image-large-feature {
     order: 2;
   }
+
+  .staff-member-shell {
+    order: 3;
+  }
   /* Homepage - Pets Happy Section - Styling the Image */
-  .image-pets-happy img {
+  .image-large-feature img {
     max-width: 400px;
     margin: 0 auto;
     display: block;
   }
 }
 
-/* Small devices, cell phone (770px screens only) */
+/* For 770px screens only */
 @media screen and (max-width: 770px) {
   /* Removing the min-height restriction of the H3 of the "paw-listings" div */
   .pawcast-listing h3 {
@@ -513,8 +618,9 @@ make sure that they are all the same width when wrapping to a new row */
   }
 }
 
-/* This is for the proud dog Lottie only to move it upward on screen sizes 380 width and below */
+/* Official Breakpoint - For 390px screens only */
 @media screen and (max-width: 390px) {
+  /* This is for the proud dog Lottie only to move it upward on screen sizes 380 width and below */
   #voted-best .proud-dog {
     margin-top: -45px;
   }

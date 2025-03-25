@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Offering dog walking, doggi daycare, dog training and vet care services. Voted the best Dog walkers in New York City."
+    />
+
+    <title>NYC Dog Pro</title>
+
+    <!-- Bootstrap CSS Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+      /* Dog's background shape in the header */
+      header {
+        margin-top: -60px; /* Moves the header up to remove the white empty space since the nav is position reletive  */
+        padding-top: 100px;
+
+        background-image: url(https://jtraveler.github.io/project-1/assets/images/background-paws.svg);
+        background-repeat: no-repeat;
+        background-size: 1849px;
+        background-position: bottom -193px right -10px;
+        overflow: hidden; /* Prevents lottie animation from overspilling causing scrollbars */
+      }
+    </style>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav id="navbar" class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/images/background-paw-1-only.svg"
+            alt="logo icon"
+          />NYC Dog Pro
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html" aria-current="page"
+                >About</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="pawcast.html">Pawcast</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="d-flex container-fluid section pb-5">
+      <div class="container d-flex flex-wrap pt-5 px-0 float-start">
+        <div class="col-12 m-auto">
+          <h1 class="h1-interior">About.</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container">
+        <div class="d-flex flex-wrap">
+          <div class="col-12 col-lg-6 pe-lg-4">
+            <h2>Our Mission</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              massa tellus, pellentesque ut ex non, dictum vehicula dolor. Donec
+              placerat felis luctus dictum rhoncus. Nunc et volutpat arcu.
+              Curabitur accumsan pulvinar lectus sed tincidunt. Suspendisse
+              convallis velit nec elementum molestie. Proin tincidunt lectus
+              eget nibh commodo volutpat. Proin tristique tempus tincidunt.
+              Morbi fermentum lacus sit amet odio faucibus vulputate. Proin
+              tincidunt lectus eget nibh commodo volutpat. Proin tristique
+              tempus tincidunt. Morbi fermentum lacus sit amet odio faucibus
+              vulputate.
+            </p>
+          </div>
+          <!-- Lottie  form -->
+          <div
+            class="col-12 col-lg-6 ps-lg-4 pt-5 pt-lg-0 d-flex justify-content-center"
+          >
+            <div class="lottie-player dog-kiss-lottie">
+              <!-- For standard lottie files -->
+
+              <dotlottie-player
+                src="assets/lottie/lottie-dog-kiss-5oujopupat.lottie"
+                background="transparent"
+                speed=".80"
+                class="dog-walk"
+                loop
+                autoplay
+              ></dotlottie-player>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="d-flex flex-wrap">
+          <div
+            class="col-12 col-lg-6 pe-lg-4 pb-lg-5 pb-sm-3 d-flex flex-wrap justify-content-center image-large-feature"
+          >
+            <img
+              src="assets/images/midjourney-ceo.jpg"
+              alt="woman walking dog"
+              loading="lazy"
+              width="530"
+              height="auto"
+            />
+
+            <div class="staff-footer d-flex flex-column col-12">
+              <span class="staff-name">Lena Foster</span>
+              <span class="staff-title">Founder & CEO</span>
+            </div>
+          </div>
+          <!-- Lottie  form -->
+          <div class="col-12 col-lg-6 ps-lg-4 pt-5">
+            <h2 class="pt-5">Meet the Dog Lovers Behind NYC Dog Pro</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              massa tellus, pellentesque ut ex non, dictum vehicula dolor. Donec
+              placerat felis luctus dictum rhoncus. Nunc et volutpat arcu.
+              Curabitur accumsan pulvinar lectus sed tincidunt.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              massa tellus, pellentesque ut ex non, dictum vehicula dolor. Donec
+              placerat felis luctus dictum rhoncus. Nunc et volutpat arcu.
+              Curabitur accumsan pulvinar lectus sed tincidunt.
+            </p>
+          </div>
+
+          <div class="staff-member-shell d-flex col-12">
+            <div
+              class="staff-member odd-column-fix d-flex align-items-center flex-column col-12 col-md-4"
+            >
+              <div class="profile-photo">
+                <img
+                  src="assets/images/about-us-profile-photo2.jpg"
+                  alt="profile photo"
+                />
+              </div>
+              <div
+                class="staff-footer mt-auto d-flex justify-content-start flex-column col-12"
+              >
+                <span class="staff-name">Lena Foster</span>
+                <span class="staff-title">Founder & CEO</span>
+              </div>
+            </div>
+
+            <div
+              class="staff-member odd-column-fix d-flex align-items-center flex-column col-12 col-md-4"
+            >
+              <div class="profile-photo">
+                <img
+                  src="assets/images/about-us-profile-photo1.jpg"
+                  alt="profile photo"
+                />
+              </div>
+              <div
+                class="staff-footer mt-auto d-flex justify-content-start flex-column col-12"
+              >
+                <span class="staff-name">Lena Foster</span>
+                <span class="staff-title">Founder & CEO</span>
+              </div>
+            </div>
+
+            <div
+              class="staff-member odd-column-fix d-flex align-items-center flex-column col-12 col-md-4"
+            >
+              <div class="profile-photo">
+                <img
+                  src="assets/images/about-us-profile-photo10.jpg"
+                  alt="profile photo"
+                />
+              </div>
+              <div
+                class="staff-footer mt-auto d-flex justify-content-start flex-column col-12"
+              >
+                <span class="staff-name">Lena Foster</span>
+                <span class="staff-title">Founder & CEO</span>
+              </div>
+            </div>
+
+            <div
+              class="staff-member odd-column-fix d-flex align-items-center flex-column col-12 col-md-4"
+            >
+              <div class="profile-photo">
+                <img
+                  src="assets/images/about-us-profile-photo4.jpg"
+                  alt="profile photo"
+                />
+              </div>
+              <div
+                class="staff-footer mt-auto d-flex justify-content-start flex-column col-12"
+              >
+                <span class="staff-name">Lena Foster</span>
+                <span class="staff-title">Founder & CEO</span>
+              </div>
+            </div>
+
+            <div
+              class="staff-member odd-column-fix d-flex align-items-center flex-column col-12 col-md-4"
+            >
+              <div class="profile-photo">
+                <img
+                  src="assets/images/about-us-profile-photo5.jpg"
+                  alt="profile photo"
+                />
+              </div>
+              <div
+                class="staff-footer mt-auto d-flex justify-content-start flex-column col-12"
+              >
+                <span class="staff-name">Lena Foster</span>
+                <span class="staff-title">Founder & CEO</span>
+              </div>
+            </div>
+
+            <div
+              class="staff-member odd-column-fix d-flex align-items-center flex-column col-12 col-md-4"
+            >
+              <div class="profile-photo">
+                <img
+                  src="assets/images/about-us-profile-photo9.jpg"
+                  alt="profile photo"
+                />
+              </div>
+              <div
+                class="staff-footer mt-auto d-flex justify-content-start flex-column col-12"
+              >
+                <span class="staff-name">Lena Foster</span>
+                <span class="staff-title">Founder & CEO</span>
+              </div>
+            </div>
+
+            <div
+              class="staff-member odd-column-fix d-flex align-items-center flex-column col-12 col-md-4"
+            >
+              <div class="profile-photo">
+                <img
+                  src="assets/images/about-us-profile-photo8.jpg"
+                  alt="profile photo"
+                />
+              </div>
+              <div
+                class="staff-footer mt-auto d-flex justify-content-start flex-column col-12"
+              >
+                <span class="staff-name">Lena Foster</span>
+                <span class="staff-title">Founder & CEO</span>
+              </div>
+            </div>
+
+            <div
+              class="staff-member odd-column-fix d-flex align-items-center flex-column col-12 col-md-4"
+            >
+              <div class="profile-photo">
+                <img
+                  src="assets/images/about-us-profile-photo13.jpg"
+                  alt="profile photo"
+                />
+              </div>
+              <div
+                class="staff-footer mt-auto d-flex justify-content-start flex-column col-12"
+              >
+                <span class="staff-name">Lena Foster</span>
+                <span class="staff-title">Founder & CEO</span>
+              </div>
+            </div>
+
+            <div
+              class="staff-member odd-column-fix d-flex align-items-center flex-column col-12 col-md-4"
+            >
+              <div class="profile-photo">
+                <img
+                  src="assets/images/about-us-profile-photo7.jpg"
+                  alt="profile photo"
+                />
+              </div>
+              <div
+                class="staff-footer mt-auto d-flex justify-content-start flex-column col-12"
+              >
+                <span class="staff-name">Lena Foster</span>
+                <span class="staff-title">Founder & CEO</span>
+              </div>
+            </div>
+
+            <div
+              class="staff-member odd-column-fix d-flex align-items-center flex-column col-12 col-md-4"
+            >
+              <div class="profile-photo">
+                <img
+                  src="assets/images/about-us-profile-photo3.jpg"
+                  alt="profile photo"
+                />
+              </div>
+              <div
+                class="staff-footer mt-auto d-flex justify-content-start flex-column col-12"
+              >
+                <span class="staff-name">Lena Foster</span>
+                <span class="staff-title">Founder & CEO</span>
+              </div>
+            </div>
+
+            <div
+              class="staff-member odd-column-fix d-flex align-items-center flex-column col-12 col-md-4"
+            >
+              <div class="profile-photo">
+                <img
+                  src="assets/images/about-us-profile-photo11.jpg"
+                  alt="profile photo"
+                />
+              </div>
+              <div
+                class="staff-footer mt-auto d-flex justify-content-start flex-column col-12"
+              >
+                <span class="staff-name">Lena Foster</span>
+                <span class="staff-title">Founder & CEO</span>
+              </div>
+            </div>
+
+            <div
+              class="staff-member odd-column-fix d-flex align-items-center flex-column col-12 col-md-4"
+            >
+              <div class="profile-photo">
+                <img
+                  src="assets/images/about-us-profile-photo12.jpg"
+                  alt="profile photo"
+                />
+              </div>
+              <div
+                class="staff-footer mt-auto d-flex justify-content-start flex-column col-12"
+              >
+                <span class="staff-name">Lena Foster</span>
+                <span class="staff-title">Founder & CEO</span>
+              </div>
+            </div>
+
+            <div
+              class="staff-member odd-column-fix d-flex align-items-center flex-column col-12 col-md-4"
+            >
+              <div class="profile-photo">
+                <img
+                  src="assets/images/about-us-profile-photo14.jpg"
+                  alt="profile photo"
+                />
+              </div>
+              <div
+                class="staff-footer mt-auto d-flex justify-content-start flex-column col-12"
+              >
+                <span class="staff-name">Lena Foster</span>
+                <span class="staff-title">Founder & CEO</span>
+              </div>
+            </div>
+
+            <div
+              class="staff-member odd-column-fix d-flex align-items-center flex-column col-12 col-md-4"
+            >
+              <div class="profile-photo">
+                <img
+                  src="assets/images/about-us-profile-photo15.jpg"
+                  alt="profile photo"
+                />
+              </div>
+              <div
+                class="staff-footer mt-auto d-flex justify-content-start flex-column col-12"
+              >
+                <span class="staff-name">Lena Foster</span>
+                <span class="staff-title">Founder & CEO</span>
+              </div>
+            </div>
+
+            <div
+              class="staff-member odd-column-fix d-flex align-items-center flex-column col-12 col-md-4"
+            >
+              <div class="profile-photo">
+                <img
+                  src="assets/images/about-us-profile-photo16.jpg"
+                  alt="profile photo"
+                />
+              </div>
+              <div
+                class="staff-footer mt-auto d-flex justify-content-start flex-column col-12"
+              >
+                <span class="staff-name">Lena Foster</span>
+                <span class="staff-title">Founder & CEO</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <a href="https://player.vimeo.com/video/80629469" data-toggle="lightbox"
+          >City Lights - from Colin Rich (using embed link)</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://vimeo.com/80629469"
+          data-remote="https://player.vimeo.com/video/80629469"
+          data-toggle="lightbox"
+          >City Lights - from Colin Rich</a
+        >
+        (with recommended <code>data-remote</code> setting)
+      </p>
+    </footer>
+
+    <!-- Bootstrap JS Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- For the Bootstrap lightbox effect - source: https://trvswgnr.github.io/bs5-lightbox/ -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"
+    ></script>
+
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+  </body>
+</html>
