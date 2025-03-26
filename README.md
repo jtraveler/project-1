@@ -1,308 +1,185 @@
 # project-1
 
-# Brighton Beach Yoga
+# NYC Dog Pro
 
-Project 1 - Brogan Carpenter
+Project 1 - Matthew Johnson
 
-[View live github project](https://github.com/Brogandaisy/brighton-beach-yoga.git)
+[View live github project](https://jtraveler.github.io/project-1/)
 
-# brighton beach <ins>yoga</ins>
+# NYC Dog Pro
 
-This project creates a simple, yet effective, website for the 'brighton beach <ins>yoga</ins>' company, offering information on their class range of styles, how to sign up to their monthly newsletter and to find out more information on how the studio started. The website uses their core brand colours, calming images of yoga and the sea with simple and easy to read text.
+My 4 year old son inspired me for this project as he keeps asking if he can have a puppy. Therefore that cause me to often think of dogs and dog care. Also, I met my wife in New York city so I also got inspired to create a fictional dog care business in New York City, thus I create 'NYC Dog Pro', which is a fictional dog care business business based in Brooklyn, NY. I wanted to make the website clean, bright and interesting for dog lovers. The primary services that NYC Dog Pro offers is dog walking, doggie daycare, dog training and vet care. The website uses brand colors, attractive images and simple to read text.
 
-## About 'brighton beach <ins>yoga</ins>'
+## About 'NYC Dog Pro'
 
-The 'brighton beach <ins>yoga</ins>' is a studio based in Brighton, England, on the South East Coast. Created by two founders, living in Brighton, who wanted to bring to life their love of the outdoors and the sea with being mindful and creating movement. The studio has been open since 2019, offering 3 styles of yoga classes right on the beach.
+The fictional backstory of 'NYC Dog Pro', is that they are based in Brooklyn, New Yok, in very busy neighborhood that gets lots of clients. They are lead by world-renowned dog trainer Jaydon Rivera whi is the founder and CEO. 'NYC Dog Pro' team is he best in the city and have won various awards such as the prestigious 'Best Dog Walkers' award, awarded by Dog Lovers Magazine. Not only is the team extremely skilled but they are very diverse with people from all over the world. They are team of dog lovers and quality care for dogs is their passion.
 
-They wanted a new website which held a manageable amount of information for new members to read. They asked for a page for their class offerings and a page on how the studio was created. Plus, a way to sign up to get more information from their monthly newsletter.
+Also, NYC Dog Pro just so happen runs a very popular podcast (or pawcast), which is a huge hit amongst the dog lover community. So nother goal is how to best present the podcast episodes and make them easily accessable.
 
 ## Table of Contents
 
 1. [UX](#user-experience-ux)
    - [User Stories](#user-stories)
-   - [New Members](#new-members)
+   - [New Clients and More Podcast Listeners](#new-clients-and-more-podcast-listeners)
 2. [Design](#design)
    - [Wireframes](#wireframes)
 3. [Deployment](#deployment)
 4. [Features](#features)
-5. [Testing](#testing)
-   - [Browser Testing](#browser-testing)
-   - [Code Validation](#code-validation)
-   - [Lighthouse Test](#lighthouse-testing)
-6. [Technologies Used](#technologies-used)
-7. [Credits and Reference](#credits-and-reference)
+5. [Technologies Used](#technologies-used)
+6. [Credits and Reference](#credits-and-reference)
 
 ## User Experience UX
 
 ### User Stories
 
-The aim for this website was to have a platform where new members can find out more information about 'brighton beach <ins>yoga</ins>'. The studio has brand presence in a prime location, with lots of footfall traffic, however they didn't have an online presence, other than instagram, for new members to discover what they offer.
+Jaydon Rivera, the founder and CEO wanted to have his business rebranded and to have a new website redesign where clients can read all about the services and learn what makes NYC Dog Pro one of the best dog care business in New York. The problem with the old website that the style was too busy, not interesting, SEO was lacking and it had a hgih bounce rate. Also, the website lacked a personal touch with people not knowing much about the staff, the same people that would care for their pets. And finally, Juan Rivera, really wants have a the podcast episodes well preented on the website so people can easily listen to them.
 
-### New Members
+### New Clients and More Podcast Listeners
 
-The website has been designed with a primary focus on new members. The website clearly displays the following information in an easy to access format:
+The question is how to get new clients and make it so that users can easily play past podcasts. The website should display the following information in an easy to access format:
 
-- The styles of classes 'brighton beach <ins>yoga</ins>' has to offer
-- The first class free promotion
-- How to sign up to get the monthly newsletter
-- Descriptions on the styles of classes they offer
-- Why the studio was created in 2019
-
-If an non-new member visits the website, they can still get a refresh on what class styles the studio has to offer, and sign up to the newsletter if they haven't already. They can also click to visit their social platforms easily.
+- Displaying the services offered
+- Mentioning any awards
+- Showing reviews
+- Make it easy for people to book an appointment
+- Descriptions of the services offered
+- Provide some backgorund on the company
 
 ## Design
 
-The website has been created across 3 pages, for clear and easy to use seperation of information. The pages have been linked with a simple navigation menu, which adapts to a range of devices for ease of use.
-
-Each page is simple and follows the brand guidelines, allowing for brand recognition to flow throughout the site. Each sub-page has access back to the homepage.
+The website has 4 pages, which are all responsive. The look and feel should be fun and easy to navigate. And the user must be able to acess all of the pages regardless of which page they are currently on. Each page should follow the brand guidlines and styling.
 
 ### Brand Colours
 
-![brand-colours](assets/images/brighton-beach-colors.png)
+![brand-colours](assets/images/for-readme/nyc-pro-colors.jpg)
 
 ## Wireframes
 
 ### Desktop Wireframes
 
-![desktop-wireframe](assets/images/brighton-beach-desktop-wireframe.png)
-![desktop-wireframe](assets/images/brighton-beach-wireframe-desktop-1.png)
+![desktop-wireframe](assets/images/for-readme/desktop01.png)
+
+### Sub Page Desktop Wireframe
+
+![desktop-wireframe](assets/images/for-readme/desktop02.png)
+![desktop-wireframe](assets/images/for-readme/desktop03.png)
+![desktop-wireframe](assets/images/for-readme/desktop04.png)
 
 ### Mobile Wireframes
 
-![mobile-wireframe](assets/images/brighton-beach-mobile-wireframe.png)
-![mobile-wireframe](assets/images/brighton-beach-mobile-wireframe1.png)
+![mobile-wireframe](assets/images/for-readme/mobile01.png)
 
 ### Sub Page Mobile Wireframe
 
-![mobile-wireframe](assets/images/brighton-beach-mobile-wireframes-Sub-Page.png)
+![mobile-wireframe](assets/images/for-readme/mobile02.png)
+![mobile-wireframe](assets/images/for-readme/mobile03.png)
 
 ## Deployment
 
-Using Github and Gitpod to deploy my project.
+I used Github deploy my project.
 
 ### My Repository
 
-1. Created a new public local repository on my Github account, and copied the repository to Gitpod to start building the website.
+1. I created a new local repository on on Github
 
-2. When writing my code using Gitpod, I ensured I committed my changes to my local repository in regular intervals, using clear messaging for any changes I had made.
+2. I committed each major change to ensure I could always look back on it in case I needed to reference the history of my work. I added a detailed message for each commit.
 
-   - git add .
-   - git commit -m "This would be my message on what I had changed"
+For example:
 
-3. After making my regular commits, I would then push the commits to my remote repository by using the command 'git push'.
+- git add .
+- git commit -m "I made this update and this is why this change is important"
 
-### Hosting
-
-1. To host my website, I went to Github and selected my repository named brighton-beach-yoga.
-2. I went to Settings > Pages
-3. I made sure the following settings were applied:
-   - Source: 'Deploy from a branch' on the dropdown menu
-   - Branch: 'Main' and 'root' from the dropdown menus
-   - Pressed save
-4. This takes a few minutes to deploy, and will be found on the righthand-side of the repository dashboard page.
-
-### Deployment on Github
-
-![github-deployment](assets/images/brighton-beach-deployment.png)
+3. I then used the 'git push' command to push to the live website.
 
 ## Features
 
-The features for this website were chosen for a simple user experience, allowing the information to be presented easily and accessable to the end user.
+I chose the features for this website to all users to easily navigate between sections. The look of the website was very important as I used some elements sich as lottie animations to enhance the user experience. I was able to customize each lottie to match the brand of NYC Dog Pro.
+
+Lottie examples:
+
+![lottie-examples](assets/images/for-readme/lottie-example1.jpg)
+![lottie-examples](assets/images/for-readme/lottie-example2.jpg)
+![lottie-examples](assets/images/for-readme/lottie-example3.jpg)
+![lottie-examples](assets/images/for-readme/lottie-example4.jpg)
+
+Credits:
+
+Man walking created by Sofia Drankovich
+(https://lottiefiles.com/free-animation/waling-men-listening-podcast-)
+
+Idle Dog created by Zachary Christensen
+(https://lottiefiles.com/free-animation/norm-the-dog-buvwpY646G)
+
+Proud Dog created by Syed Asim Ali Shah
+(https://lottiefiles.com/free-animation/dog-walking-7K4JCxjvHm)
+
+Woman kissing do creatd by Sabrina Picco
+(https://lottiefiles.com/free-animation/happy-dog-day-AJlBp9pdM7)
+
+Mailing Evelope creatd by GW
+(https://lottiefiles.com/free-animation/mail-EjwVwj9a0h)
+
+## Background Pattern
+
+I used a playful paw shape for the background of the headers.
+
+Image created by starline on Freepik
+(https://tinyurl.com/mwxwjv6k)
+
+![backgorund-image](assets/images/for-readme/backgorund-paws.jpg)
 
 ### Navigation Menu
 
-The navigation menu is always at the top of the screen, using the 'brighton beach <ins>yoga</ins>' logo and adjusts to a range of screen sizes.
+The navigation is very simplistic and and most importantly, responsive. It reflects the branding with displaying the logo and brand colors.
 
-- When in mobile, the + icon is used to expand the menu to a drop down menu, to save screen space and create a simple nav system.
+- The navigation on the mobile view is hidden but it's revealed once the user clicks on the hamburger menu icon on the right side.
 
-- When using a tablet or desktop, the drop down menu is removed and the menu titles are displayed along the top of the page, as there is more space to use.
+- The hamburger menu icon is hidden on the tablet and desktop views allowing the user to see all of the menue items at once.
 
 ### Mobile Nav Bar
 
-![mobile-nav](assets/images/brighton-beach-why-us.png)
+![mobile-nav](assets/images/for-readme/navigation-mobile.jpg)
 
 ### Desktop Nav Bar
 
-![desktop-nav](assets/images/brighton-beach-desktop.png)
+![desktop-nav](assets/images/for-readme/navigation-desktop.jpg)
 
-### Banner
+### Icons Used
 
-On each page a visual banner is used to display the title of the page. The image used on the sub-pages is consistent to provide brand consistency.
+I used icons from Font Awesome and Freepik
 
-The homepage banner is larger to allow for promotions and call to actions to be displayed. The homepage banner adjusts depending on the screen size - on mobile the promotion text banner is fixed to the left side of the screen, and when using a tablet or desktop the banner becomes full width.
+(https://fontawesome.com/)
 
-### Banner Mobile
+Stars icons from Freepik
 
-![banner-mobile](assets/images/brighton-beach-mobile-view.png)
+(https://tinyurl.com/jecd6jja)
 
-### Banner Desktop
+![icons-used](assets/images/for-readme/icons-used.jpg)
 
-![banner-pages](assets/images/brighton-beach-page-banner.png)
+### Images Used
 
-### Why 'brighton beach <ins>yoga</ins>' and Benefits Section
+I used Midjourney for generatying all of the images on the website. I wanted to go for classy studio style images that I could easily cutout the background.
 
-As you scroll down the homepage there is a section for the new member to easily see why they should choose 'brighton beach <ins>yoga</ins>' and the benefits of taking a class at their studio.
+(https://www.midjourney.com/)
 
-- Small, easy to read paragraphs are used, which adapt in size depending on the screen size.
+Image examples:
 
-- Bullet icons are used in the brand colours, making them stand out and tie in with the branding.
-
-### Bullet Icons
-
-![bullet-icons](assets/images/brighton-beach-bullet-icons.png)
-
-### Newsletter Sign Up Form
-
-On each page there is a newsletter sign up form, where new or old members can enter their first name, last name and email and select the tick box to start receiving the newsletter to their email inboxes.
-
-The text input fields are required, allowing the studio to access the key details of the member.
-
-The form is styled using the brand colours and fonts.
-
-### Newsletter Form
-
-![newsletter](assets/images/brighton-beach-newsletter.png)
-
-### Anchor Links
-
-On each page banner there is a call to action button displayed, which links to the newsletter form on the page they are viewing using an anchor link. This avoids the member scrolling down to the sign up form.
-
-### Class Style Images
-
-On the 'Classes' page, descriptions of each class style are displayed. On mobile view there is an image for each class style, however when using a tablet or desktop the images reduce to just 2 images to allow an easier read for the member and reduce load times for the page.
-
-### Hidden Images for Desktop
-
-![classes-desktop](assets/images/brighton-beach-classes-desktop.png)
+![icons-used](assets/images/for-readme/images-used.jpg)
 
 ### Footer
 
-The footer keeps a consistent style on each page. A contrasting colour is used to stand out and show it is the end of the page easily. The information displayed is easy to read, and find for the member.
+The footer is simplistic and displays the navigation at all times. I used a footer template from MDG.
 
-- The logo is displayed
-- First class free promotion is repeated
-- Navigation links to all the website pages
-- Instagram links
-- Website link
+- I made sure that the logo is displayed
+- A brief paragraph what the company is about
+- Navigation link
+- Contact information
 
-![footer](assets/images/brighton-beach-footer.png)
+Credit:
 
-## Testing
+https://mdbootstrap.com/docs/standard/navigation/footer/
 
-## Browser Testing
-
-I used ['Browser Stack'](https://live.browserstack.com/dashboard#os=Windows&os_version=11&browser=Chrome&browser_version=124.0&zoom_to_fit=true&full_screen=true&url=https%3A%2F%2Fbrogandaisy.github.io%2Fbrighton-beach-yoga%2Fabout.html&speed=1) to test a range of web browswers on desktop and mobile. See an example of tests below.
-
-<table>
-  <thead>
-    <tr>
-      <th>Browser</th>
-      <th>Device</th>
-      <th>Appearance</th>
-      <th>Responsiveness</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Chrome</td>
-      <td>Google Pixel 8 and Desktop Surface 5</td>
-      <td>All the pages format correctly. The links, nav and form all work well.</td>
-      <td>Responsive design / Very good</td>
-    </tr>
-    <tr>
-       <td>Edge</td>
-       <td>iPad 7 and Desktop Macook Pro</td>
-      <td>All the pages format correctly. The links, nav and form all work well.</td>
-      <td>Responsive design / Very good</td>
-    </tr>
-    <tr>
-      <td>Firefox</td>
-      <td>iPhone 15 and Desktop Macbook Air</td>
-      <td>All the pages format correctly. The links, nav and form all work well.</td>
-      <td>Responsive design / Very good</td>
-    </tr>
- 
-  </tbody>
-</table>
-
-## Responsive Testing
-
-<table>
-  <thead>
-    <tr>
-      <th>Device</th>
-      <th>Max-Width 575px Result (Small Mobile)</th>
-      <th>Min-Width 576px Result (Large Mobile)</th>
-      <th>Min-Width 768px Result (Tablet)</th>
-      <th>Min-Width 992px and Larger Result (Desktop)</th>
-     
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Galaxy Fold</td>
-      <td>Left banner text working well, movile nav bar formats correctly. All images display.</td>
-      <td>When rotated landscape, designed images are removed from 'Classes' page to save space and speed.</td>
-      <td>N/A</td>
-      <td>N/A</td>
-    </tr>
-    <tr>
-       <td>iPhone 6/7/8 Plus</td>
-       <td>Left banner text working well, movile nav bar formats correctly. All images display.</td>
-      <td>When rotated landscape, images format wider but the nav bar remains as a dropdown to save space. Designed images are removed from 'Classes' page</td>
-      <td>N/A</td>
-      <td>N/A</td>
-    </tr>
-    <tr>
-      <td>iPad Air</td>
-      <td>N/A</td>
-      <td>N/A</td>
-      <td>Nav bar becomes extended with additional space. Designed images removed from 'Classes' page. Images and text areas formated with additional padding. Homepage banner full width success.</td>
-      <td>When rotated landscape, features remain working well. Fonts increase due to screen size.</td>
-    </tr>
-    <tr>
-    <td>Macbook Air</td>
-    <td>N/A</td>
-    <td>N/A</td>
-    <td>N/A</td>
-    <td>Features are centered to the desktop page, images resized to not overstretch and homepage banner CTA is centered. Nav bar is extended for easier use.</td>
- 
-  </tbody>
-</table>
-
-## Device Formats
-
-![pixel-phone](assets/images/brighton-beach-pixel.png)
-![ipad](assets/images/brighton-beach-ipad-homepage.png)
-![desktop](assets/images/brighton-beach-classes-desktop1.png)
-
-## Code Validation
-
-### HTML Validation
-
-![html-validation](assets/images/brighton-beach-html-validation.png)
-
-## CSS Validation
-
-![css-validation](assets/images/brighton-beach-css-validation.png)
-
-## Lighthouse Testing
-
-### Lighthouse Test Mobile - Homepage
-
-![lighthouse-mobile](assets/images/brighton-beach-lighthouse-mobile1.png)
-
-### Lighthouse Test Desktop - Homepage
-
-![lighthouse-desktop](assets/images/brighton-beach-lighthouse-desktop1.png)
-
-### Testing Errors and Improvements
-
-When testing all the website pages using Lighthouse, I found the following bugs or improvements to increase the overall performance score:
-
-- Colour contrasts to improve accessability score. I made the text font darker and when a button is used I made the font bold to stand out.
-- Slow loading times. I resized my images to improve on page load times. This improved the score dramatically.
-- Removing any non-used code elements in CSS. This improved the best practice score.
+![footer](assets/images/for-readme/footer.jpg)
 
 ## Technologies Used
 
@@ -320,9 +197,9 @@ Throughout the website build I used the following sources:
 
 - Example code from Code Institute Love Running Project
 - [W3Schools.com](https://www.w3schools.com/)
-- [Unsplash.com](https://unsplash.com/) for all images
-- [Canva](https://www.canva.com/) for favicon design
+- [Midjourney.com](https://midjourney.com/) for all images
+- [Freepik](https://www.freepik.com/) for favicon design
 
 ## Author
 
-Brogan Carpenter
+Matthew Johnson
