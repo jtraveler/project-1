@@ -195,7 +195,7 @@ Github and Gitpod.
 
 Throughout the website build I used the following sources:
 
-- Example code from Code Institute Love Running Project
+- I used example code from Code Institute projects
 - [W3Schools.com](https://www.w3schools.com/)
 - [Midjourney.com](https://midjourney.com/) for all images
 - [Freepik](https://www.freepik.com/) for favicon design
