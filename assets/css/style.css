@@ -53,6 +53,11 @@ h2 {
   font-weight: 700;
   margin-bottom: 1.3rem;
 }
+
+h2.h2-width-limit {
+  max-width: 530px;
+}
+
 h3 {
   font-weight: 700;
   font-size: 22px;
@@ -64,6 +69,7 @@ h3 {
   font-family: "Nunito", "san-serif";
   display: flex;
   justify-content: center;
+  color: initial;
 }
 
 .navbar-brand img {
@@ -195,6 +201,7 @@ header .lottie-dog1 img {
   width: 100%;
   height: auto;
   position: relative;
+  padding: 40px 40px 0 40px;
 }
 /* Border radius for large images */
 .img-br-lg {
@@ -288,7 +295,7 @@ In addition, I made it so that if the user hovers over the parent "pawcast-listi
 }
 /* This is the date section in the "paw-listings" div */
 .pawcast-listing .date {
-  flex-basis: 75px;
+  flex-basis: 66px;
   text-align: right;
   font-weight: 500;
   font-size: 14px;
@@ -534,6 +541,21 @@ textarea.form-control {
 footer {
   background-color: #e6e6e6;
   min-height: 200px;
+}
+
+footer h6 {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-weight: 800;
+}
+
+footer .address {
+  text-indent: -30px;
+  padding-left: 30px;
+}
+
+footer .address img {
+  margin-right: 6px;
 }
 
 /* Official Break Point - XXL devices (1400px and UP!) */
