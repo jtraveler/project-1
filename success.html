@@ -36,7 +36,11 @@
     </style>
   </head>
   <body class="d-flex flex-column min-vh-100">
-    <nav id="navbar" class="navbar navbar-expand-lg">
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg fixed-top"
+      data-bs-theme="white"
+    >
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img
@@ -44,11 +48,23 @@
             alt="logo icon"
           />NYC Dog Pro
         </a>
-
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
@@ -58,9 +74,7 @@
               <a class="nav-link" href="pawcast.html">Pawcast</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="contact.html" aria-current="page"
-                >Contact</a
-              >
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
