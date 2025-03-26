@@ -774,9 +774,32 @@
       src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"
     ></script>
 
-    <script
-      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
-      type="module"
-    ></script>
+    <!-- F'in sweet Webflow Hacks -->
+    <script>
+      // if viewportWidth width <= 576
+      if (window.innerWidth <= 576) {
+        // load mobile script
+        // Using regular images for mobile rather than scripts
+      } else {
+        // viewportWidth width > 576
+        // load desktop script
+        // Lottie script
+        loadScriptFile(
+          "https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs",
+          "module"
+        );
+      }
+      // loadScriptFile func
+      function loadScriptFile(src, type) {
+        // create element <script>
+        const $script = document.createElement("script");
+        // add type attribute
+        if (type) $script.setAttribute("type", type);
+        // add src attribute
+        $script.setAttribute("src", src);
+        // append the <script> element to <head>
+        document.head.appendChild($script);
+      }
+    </script>
   </body>
 </html>
