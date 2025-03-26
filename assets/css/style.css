@@ -222,6 +222,12 @@ header .lottie-dog1 img {
   border: 2px solid #ffda55;
 }
 
+/* Hompage - We Make Your Pet Happy section */
+
+#homepage-pet-happy {
+  margin-top: -60px;
+}
+
 .pawcast-tag-base {
   font-size: 14px;
   padding: 3px 9px;
@@ -536,6 +542,20 @@ textarea.form-control {
 .staff-title {
   color: rgb(148, 148, 148);
   font-size: 14px;
+}
+
+/* About Page - About Our Services */
+
+#about-our-services {
+  margin-top: 80px;
+}
+
+#about-our-services .icon-shell {
+  margin-bottom: 0;
+}
+
+#about-our-services h3 {
+  font-size: 26px;
 }
 
 footer {
