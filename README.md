@@ -2,13 +2,13 @@
 
 # NYC Dog Pro
 
-Project 1 - Matthew C Johnson
+Project 1 - Matthew Corey Johnson
 
 [View live github project](https://jtraveler.github.io/project-1/)
 
 # NYC Dog Pro
 
-My 4 year old son inspired me for this project as he keeps asking if he can have a puppy. Therefore that cause me to often think of dogs and dog care. Also, I met my wife in New York city so I also got inspired to create a fictional dog care business in New York City, thus I create 'NYC Dog Pro', which is a fictional dog care business business based in Brooklyn, NY. I wanted to make the website clean, bright and interesting for dog lovers. The primary services that NYC Dog Pro offers is dog walking, doggie daycare, dog training and vet care. The website uses brand colors, attractive images and simple to read text.
+My 4 year old son inspired me for this project as he keeps asking if he can have a dog Therefore that cause me to often think of dogs and dog care. Also, I met my wife in New York city so I also got inspired to create a fictional dog care business in New York City, thus I create 'NYC Dog Pro', which is a fictional dog care business business based in Brooklyn, NY. I wanted to make the website clean, bright and interesting for dog lovers. The primary services that NYC Dog Pro offers is dog walking, doggie daycare, dog training and vet care. The website uses brand colors, attractive images and simple to read text.
 
 ## About 'NYC Dog Pro'
 
