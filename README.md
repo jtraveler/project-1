@@ -2,7 +2,7 @@
 
 # NYC Dog Pro
 
-Project 1 - Matthew Johnson
+Project 1 - Matthew C. Johnson
 
 [View live github project](https://jtraveler.github.io/project-1/)
 
@@ -203,3 +203,4 @@ Throughout the website build I used the following sources:
 ## Author
 
 Matthew Johnson
+# love-maths
