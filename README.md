@@ -266,9 +266,15 @@ I used ['Browser Stack'](https://live.browserstack.com/dashboard#os=Windows&os_v
 </table>
 
 ## Device Formats
-![pixel-phone](assets/images/brighton-beach-pixel.png)
-![ipad](assets/images/brighton-beach-ipad-homepage.png)
-![desktop](assets/images/brighton-beach-classes-desktop1.png)
+
+Mobile
+![pixel-phone](assets/images/for-readme/nyc-dog-pro-mockup-mobile.jpg)
+
+Tablet
+![ipad](assets/images/for-readme/nyc-dog-pro-mockup-tablet.jpg)
+
+Desktop
+![desktop](assets/images/for-readme/nyc-dog-pro-mockup-desktop.jpg)
 
 ## Code Validation
 ### HTML Validation
