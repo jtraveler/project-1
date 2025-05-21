@@ -2,7 +2,7 @@
 
 # NYC Dog Pro
 
-Project 1 - Matthew C Johnson
+Project 1 - Matthew Corey Johnson
 
 [View live github project](https://jtraveler.github.io/project-1/)
 
