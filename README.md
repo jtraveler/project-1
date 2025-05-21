@@ -2,13 +2,13 @@
 
 # NYC Dog Pro
 
-Project 1 - Matthew Corey Johnson from DC
+Project 1 - Matthew Johnson
 
 [View live github project](https://jtraveler.github.io/project-1/)
 
 # NYC Dog Pro
 
-My 4 year old son inspired me for this project as he keeps asking if he can have a dog Therefore that cause me to often think of dogs and dog care. Also, I met my wife in New York city so I also got inspired to create a fictional dog care business in New York City, thus I create 'NYC Dog Pro', which is a fictional dog care business business based in Brooklyn, NY. I wanted to make the website clean, bright and interesting for dog lovers. The primary services that NYC Dog Pro offers is dog walking, doggie daycare, dog training and vet care. The website uses brand colors, attractive images and simple to read text.
+My 4 year old son inspired me for this project as he keeps asking if he can have a puppy. Therefore that cause me to often think of dogs and dog care. Also, I met my wife in New York city so I also got inspired to create a fictional dog care business in New York City, thus I create 'NYC Dog Pro', which is a fictional dog care business business based in Brooklyn, NY. I wanted to make the website clean, bright and interesting for dog lovers. The primary services that NYC Dog Pro offers is dog walking, doggie daycare, dog training and vet care. The website uses brand colors, attractive images and simple to read text.
 
 ## About 'NYC Dog Pro'
 
@@ -25,8 +25,12 @@ Also, NYC Dog Pro just so happen runs a very popular podcast (or pawcast), which
    - [Wireframes](#wireframes)
 3. [Deployment](#deployment)
 4. [Features](#features)
-5. [Technologies Used](#technologies-used)
-6. [Credits and Reference](#credits-and-reference)
+5. [Testing](#testing)
+    - [Browser Testing](#browser-testing)
+    - [Code Validation](#code-validation)
+    - [Lighthouse Test](#lighthouse-testing)
+6. [Technologies Used](#technologies-used)
+7. [Credits and Reference](#credits-and-reference)
 
 ## User Experience UX
 
@@ -113,13 +117,13 @@ Idle Dog created by Zachary Christensen
 Proud Dog created by Syed Asim Ali Shah
 (https://lottiefiles.com/free-animation/dog-walking-7K4JCxjvHm)
 
-Woman kissing do creatd by Sabrina Picco
+Woman kissing dog creatd by Sabrina Picco
 (https://lottiefiles.com/free-animation/happy-dog-day-AJlBp9pdM7)
 
 Mailing Evelope creatd by GW
 (https://lottiefiles.com/free-animation/mail-EjwVwj9a0h)
 
-## Background Pattern
+### Background Pattern
 
 I used a playful paw shape for the background of the headers.
 
@@ -180,6 +184,109 @@ Credit:
 https://mdbootstrap.com/docs/standard/navigation/footer/
 
 ![footer](assets/images/for-readme/footer.jpg)
+
+
+## Testing
+## Browser Testing
+I used ['Browser Stack'](https://live.browserstack.com/dashboard#os=Windows&os_version=11&browser=Chrome&browser_version=124.0&zoom_to_fit=true&full_screen=true&url=https%3A%2F%2Fbrogandaisy.github.io%2Fbrighton-beach-yoga%2Fabout.html&speed=1) to test a range of web browswers on desktop and mobile. See an example of tests below.
+<table>
+  <thead>
+    <tr>
+      <th>Browser</th>
+      <th>Device</th>
+      <th>Appearance</th>
+      <th>Responsiveness</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chrome</td>
+      <td>Google Pixel 8 and Desktop Surface 5</td>
+      <td>All the pages format correctly. The links, nav and form all work well.</td>
+      <td>Responsive design / Very good</td>
+    </tr>
+    <tr>
+       <td>Edge</td>
+       <td>iPad 7 and Desktop Macook Pro</td>
+      <td>All the pages format correctly. The links, nav and form all work well.</td>
+      <td>Responsive design / Very good</td>
+    </tr>
+    <tr>
+      <td>Firefox</td>
+      <td>iPhone 15 and Desktop Macbook Air</td>
+      <td>All the pages format correctly. The links, nav and form all work well.</td>
+      <td>Responsive design / Very good</td>
+    </tr>
+ 
+  </tbody>
+</table>
+
+## Responsive Testing
+
+<table>
+  <thead>
+    <tr>
+      <th>Device</th>
+      <th>Max-Width 575px Result (Small Mobile)</th>
+      <th>Min-Width 576px Result (Large Mobile)</th>
+      <th>Min-Width 768px Result (Tablet)</th>
+      <th>Min-Width 992px and Larger Result (Desktop)</th>
+   </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Galaxy Fold</td>
+      <td>Left banner text working well, movile nav bar formats correctly. All images display.</td>
+      <td>When rotated landscape, designed images are removed from 'Classes' page to save space and speed.</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+       <td>iPhone 6/7/8 Plus</td>
+       <td>Left banner text working well, movile nav bar formats correctly. All images display.</td>
+      <td>When rotated landscape, images format wider but the nav bar remains as a dropdown to save space. Designed images are removed from 'Classes' page</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>iPad Air</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>Nav bar becomes extended with additional space. Designed images removed from 'Classes' page. Images and text areas formated with additional padding. Homepage banner full width success.</td>
+      <td>When rotated landscape, features remain working well. Fonts increase due to screen size.</td>
+    </tr>
+    <tr>
+    <td>Macbook Air</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>Features are centered to the desktop page, images resized to not overstretch and homepage banner CTA is centered. Nav bar is extended for easier use.</td>
+ 
+  </tbody>
+</table>
+
+## Device Formats
+![pixel-phone](assets/images/brighton-beach-pixel.png)
+![ipad](assets/images/brighton-beach-ipad-homepage.png)
+![desktop](assets/images/brighton-beach-classes-desktop1.png)
+
+## Code Validation
+### HTML Validation
+![html-validation](assets/images/brighton-beach-html-validation.png)
+## CSS Validation
+![css-validation](assets/images/brighton-beach-css-validation.png)
+## Lighthouse Testing
+### Lighthouse Test Mobile - Homepage
+![lighthouse-mobile](assets/images/brighton-beach-lighthouse-mobile1.png)
+
+### Lighthouse Test Desktop - Homepage
+![lighthouse-desktop](assets/images/brighton-beach-lighthouse-desktop1.png)
+
+### Testing Errors and Improvements
+When testing all the website pages using Lighthouse, I found the following bugs or improvements to increase the overall performance score:
+- Colour contrasts to improve accessability score. I made the text font darker and when a button is used I made the font bold to stand out.
+- Slow loading times. I resized my images to improve on page load times. This improved the score dramatically.
+- Removing any non-used code elements in CSS. This improved the best practice score.
 
 ## Technologies Used
 
