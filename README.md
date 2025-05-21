@@ -278,15 +278,39 @@ Desktop
 
 ## Code Validation
 ### HTML Validation
-![html-validation](assets/images/brighton-beach-html-validation.png)
+HTML validation for the homepage.
+![html-validation](assets/images/for-readme/nyc-dog-pro-html-validator-homepage.jpg)
+
+HTML validation for the About page.
+![html-validation](assets/images/for-readme/nyc-dog-pro-html-validator-about.jpg)
+
+HTML validation for the Pawcast page.
+![html-validation](assets/images/for-readme/nyc-dog-pro-html-validator-pawcast.jpg)
+
+HTML validation for the Contact page.
+![html-validation](assets/images/for-readme/nyc-dog-pro-html-validator-contact.jpg)
+
+HTML validation for the Success page.
+![html-validation](assets/images/for-readme/nyc-dog-pro-html-validator-success.jpg)
+
 ## CSS Validation
-![css-validation](assets/images/brighton-beach-css-validation.png)
+![css-validation](assets/images/for-readme/nyc-dog-pro-css-validator.jpg)
 ## Lighthouse Testing
 ### Lighthouse Test Mobile - Homepage
 ![lighthouse-mobile](assets/images/brighton-beach-lighthouse-mobile1.png)
 
-### Lighthouse Test Desktop - Homepage
-![lighthouse-desktop](assets/images/brighton-beach-lighthouse-desktop1.png)
+### Lighthouse Test Mobile - About
+![lighthouse-mobile](assets/images/brighton-beach-lighthouse-mobile1.png)
+
+### Lighthouse Test Mobile - Pawcast
+![lighthouse-mobile](assets/images/brighton-beach-lighthouse-mobile1.png)
+
+### Lighthouse Test Mobile - Contact
+![lighthouse-mobile](assets/images/brighton-beach-lighthouse-mobile1.png)
+
+### Lighthouse Test Mobile - Success
+![lighthouse-mobile](assets/images/brighton-beach-lighthouse-mobile1.png)
+
 
 ### Testing Errors and Improvements
 When testing all the website pages using Lighthouse, I found the following bugs or improvements to increase the overall performance score:
