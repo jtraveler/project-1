@@ -24,6 +24,14 @@ section {
   padding-bottom: 3rem;
 
 }
+
+/* Removed the default padding on the left and right of 
+the containers to all the container spacing to look good */
+.container {padding-left: 0;
+  padding-right: 0;
+}
+
+
 h1,
 h2,
 h3,
@@ -33,6 +41,8 @@ h5,
   font-family: var(--secondary-font);
   color: #333;
 }
+
+
 /* This is the H1 base */
 h1 {
   font-weight: 700;
@@ -103,6 +113,11 @@ h3 {
 #navbar .navbar-nav a:hover {
   color: #a88a1c;
 }
+/* Navbar - Sets thr background color  */
+.navbar-toggler {
+  background-color: #fff;
+}
+
 /* Navbar - Sets the color of the outline of the mobile hamberger menu when clicked on  */
 .navbar-toggler:focus {
   color: #a88a1c;
@@ -582,6 +597,19 @@ footer .address img {
   margin-right: 6px;
 }
 
+
+/* Shell for the footer links so that the links are responsive */
+footer .footer-nav-links {
+display: flex;
+gap: .2em;
+flex-wrap: wrap;
+}
+
+/* Set width limitation of footer links */
+footer .footer-nav-links p {
+  flex-basis: 100px;
+  }
+
 /* Official Break Point - XXL devices (1400px and UP!) */
 @media screen and (min-width: 1400px) {
   /* Sets max width for odd number of items in a column for this screensize to make
@@ -698,14 +726,17 @@ footer .address img {
   }
 }
 
-/* hides the dog lottie on the homepage */
+/* Custom break point*/
 @media screen and (max-width: 576px) {
+
+
+  /* hides the dog lottie on the homepage */
   .lottie-dog1 {
     display: none !important;
   }
 
   /* Adding extra padding ont he left and right to all of the containers for the mobile view */
-  .section, header {
+  .side-spacing, header {
 
     padding-left: 24px !important;
     padding-right: 24px !important;

@@ -74,7 +74,7 @@
 
     <header class="d-flex container-fluid section pb-5 pb-sm-0 pb-lg-5">
       <div class="container d-flex flex-wrap pt-md-3 px-0">
-        <div class="col-12 col-lg-6 m-auto">
+        <div class="col-12 col-lg-6 m-auto ms-0">
           <h1 class="h1-homepage">Your Dog is Part of Our Family.</h1>
           <p class="mb-4">
             Brooklyn's trusted team for complete dog care, from daily walks to
@@ -107,10 +107,10 @@
       </div>
     </header>
 
-    <main class="section">
-      <section class="container mt-4">
+    <main>
+      <section class="container mt-4 side-spacing">
         <div class="row container">
-          <div class="col-12 col-lg-6 my-auto pe-lg-5">
+          <div class="col-12 col-lg-6 my-auto pe-lg-5 pb-5">
             <div class="col-12">
               <h2>Our Specialties</h2>
               <p>
@@ -201,7 +201,7 @@
           </div>
         </div>
       </section>
-      <section class="container d-flex flex-wrap" id="homepage-pet-happy">
+      <section class="container d-flex flex-wrap side-spacing" id="homepage-pet-happy">
         <div class="pe-lg-5 col-12 col-lg-6 image-large-feature">
           <img
             src="assets/images/midjourney-woman-and-dog-1.webp"
@@ -256,7 +256,7 @@
         </div>
       </section>
       <section id="pawcast" class="container-fluid">
-        <div class="container d-flex flex-wrap">
+        <div class="container d-flex flex-wrap side-spacing">
           <div
             class="pawcast-header col-12 d-flex flex-wrap align-items-center"
          >
@@ -439,7 +439,7 @@
       </section>
       <section
         id="voted-best"
-        class="container mt-5 d-flex flex-wrap align-items-center"
+        class="container mt-5 d-flex flex-wrap align-items-center section"
      >
         <div class="col-12 col-md-6 my-auto pe-lg-5">
           <h2>Our Recent Reward</h2>
@@ -490,7 +490,7 @@
         </div>
       </section>
 
-      <section id="reviews">
+      <section id="reviews" class="side-spacing">
         <div class="container d-flex flex-wrap review-listings-shell">
           <h2 class="col-12">Read Our Pawsitive Reviews</h2>
           <div class="col-12 col-md-4 d-flex flex-wrap review-listings">
@@ -667,10 +667,10 @@
     </main>
 
     <!-- Footer -->
-    <footer class="text-center text-lg-start bg-body-tertiary text-muted pt-5">
+    <footer class="text-lg-start bg-body-tertiary text-muted pt-5">
       <!-- Section: Links  -->
-      <section class="">
-        <div class="container text-center text-md-start mt-5">
+      <section class="side-spacing">
+        <div class="container text-md-start mt-5">
           <!-- Grid row -->
           <div class="row mt-3">
             <!-- Grid column -->
@@ -695,23 +695,28 @@
             <!-- Grid column -->
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <!-- Links -->
-              <span class="mb-4 header-footer">Navigation</span>
-              <p>
-                <a href="index.html" aria-label="Go to homepage">Home</a>
-              </p>
-              <p>
-                <a href="about.html" aria-label="Go to About page">About</a>
-              </p>
-              <p>
-                <a href="pawcast.html" aria-label="Go to Pawcast (Podcast) page"
-                 >Pawcast</a
-               >
-              </p>
-              <p>
-                <a href="contact.html" aria-label="Go to Contact Page"
-                 >Contact</a
-               >
-              </p>
+              <h2 class="mb-4 header-footer">Navigation</h2>
+
+              <div class="footer-nav-links">
+
+                <p>
+                  <a href="index.html" aria-label="Go to homepage">Home</a>
+                </p>
+                <p>
+                  <a href="about.html" aria-label="Go to About page">About</a>
+                </p>
+                <p>
+                  <a href="pawcast.html" aria-label="Go to Pawcast (Podcast) page"
+                   >Pawcast</a
+                 >
+                </p>
+                <p>
+                  <a href="contact.html" aria-label="Go to Contact Page"
+                   >Contact</a
+                 >
+                </p>    
+              </div>
+             
             </div>
             <!-- Grid column -->
 
@@ -720,7 +725,7 @@
             <!-- Grid column -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
               <!-- Links -->
-              <span class="mb-4 header-footer">Contact</span>
+              <h2 class="mb-4 header-footer">Contact</h2>
               <p class="address">
                 <img
                   src="assets/images/font-awesome-location.svg"

@@ -319,9 +319,11 @@ HTML and CSS languages only.
 
 ### Technology
 
-Github and Gitpod.
+Github and Boostrap.
 
 ## Credits and Reference
+
+- Mentor: Spencer Barriball
 
 Throughout the website build I used the following sources:
 
@@ -329,8 +331,8 @@ Throughout the website build I used the following sources:
 - [W3Schools.com](https://www.w3schools.com/)
 - [Midjourney.com](https://midjourney.com/) for all images
 - [Freepik](https://www.freepik.com/) for favicon design
+- [https://trvswgnr.github.io/bs5-lightbox/](https://trvswgnr.github.io/bs5-lightbox/) for Boostrap lightbox effect for the Pawcast episodes
 
 ## Author
 
 Matthew Johnson
-# love-maths
