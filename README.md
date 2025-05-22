@@ -236,15 +236,15 @@ I used ['Browser Stack'](https://live.browserstack.com/dashboard#os=Windows&os_v
   <tbody>
     <tr>
       <td>Galaxy Fold</td>
-      <td>Left banner text working well, movile nav bar formats correctly. All images display.</td>
-      <td>When rotated landscape, designed images are removed from 'Classes' page to save space and speed.</td>
+      <td>Pass: All i displaying correctly.</td>
+      <td>Pass: All i displaying correctly.</td>
       <td>N/A</td>
       <td>N/A</td>
     </tr>
     <tr>
        <td>iPhone 6/7/8 Plus</td>
-       <td>Left banner text working well, movile nav bar formats correctly. All images display.</td>
-      <td>When rotated landscape, images format wider but the nav bar remains as a dropdown to save space. Designed images are removed from 'Classes' page</td>
+       <td>Pass: All i displaying correctly.</td>
+      <td>Pass: All i displaying correctly.</td>
       <td>N/A</td>
       <td>N/A</td>
     </tr>
@@ -252,15 +252,15 @@ I used ['Browser Stack'](https://live.browserstack.com/dashboard#os=Windows&os_v
       <td>iPad Air</td>
       <td>N/A</td>
       <td>N/A</td>
-      <td>Nav bar becomes extended with additional space. Designed images removed from 'Classes' page. Images and text areas formated with additional padding. Homepage banner full width success.</td>
-      <td>When rotated landscape, features remain working well. Fonts increase due to screen size.</td>
+      <td>Pass: All i displaying correctly.</td>
+      <td>Pass: All i displaying correctly.</td>
     </tr>
     <tr>
     <td>Macbook Air</td>
     <td>N/A</td>
     <td>N/A</td>
     <td>N/A</td>
-    <td>Features are centered to the desktop page, images resized to not overstretch and homepage banner CTA is centered. Nav bar is extended for easier use.</td>
+    <td>Pass: All i displaying correctly.</td>
  
   </tbody>
 </table>
@@ -297,26 +297,19 @@ HTML validation for the Success page.
 ![css-validation](assets/images/for-readme/nyc-dog-pro-css-validator.jpg)
 ## Lighthouse Testing
 ### Lighthouse Test Mobile - Homepage
-![lighthouse-mobile](assets/images/brighton-beach-lighthouse-mobile1.png)
+![lighthouse-mobile](assets/images/for-readme/nyc-dog-pro-lighthouse-homepage-mobile.jpg)
 
-### Lighthouse Test Mobile - About
-![lighthouse-mobile](assets/images/brighton-beach-lighthouse-mobile1.png)
-
-### Lighthouse Test Mobile - Pawcast
-![lighthouse-mobile](assets/images/brighton-beach-lighthouse-mobile1.png)
-
-### Lighthouse Test Mobile - Contact
-![lighthouse-mobile](assets/images/brighton-beach-lighthouse-mobile1.png)
-
-### Lighthouse Test Mobile - Success
-![lighthouse-mobile](assets/images/brighton-beach-lighthouse-mobile1.png)
+### Lighthouse Test Desktop - Homepage
+![lighthouse-mobile](assets/images/for-readme/nyc-dog-pro-lighthouse-homepage-desktop.jpg)
 
 
 ### Testing Errors and Improvements
-When testing all the website pages using Lighthouse, I found the following bugs or improvements to increase the overall performance score:
-- Colour contrasts to improve accessability score. I made the text font darker and when a button is used I made the font bold to stand out.
-- Slow loading times. I resized my images to improve on page load times. This improved the score dramatically.
-- Removing any non-used code elements in CSS. This improved the best practice score.
+When testing all the website pages using Lighthouse, I found the following areas that I can improve upon to increase the overall performance score:
+- Format the HTML in a way that enables crawlers to better understand websit's content.
+- Preload Largest Contentful Paint image
+- Image elements do not have explicit width and height as setting an explicit width and height on image elements reduces layout shifts and improve CLS.
+- Slow loading times. I converted images to webp format and resized my images to improve on page load times. This improved the score dramatically.
+- Removing unused code elements in CSS. This improved the best practice score. Though some code related to Boostrap and Google fonts is out of my control.
 
 ## Technologies Used
 

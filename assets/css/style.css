@@ -22,13 +22,14 @@ a {
 }
 section {
   padding-bottom: 3rem;
+
 }
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+.header-footer {
   font-family: var(--secondary-font);
   color: #333;
 }
@@ -565,10 +566,11 @@ footer {
   min-height: 200px;
 }
 
-footer h6 {
+footer .header-footer {
   font-family: var(--secondary-font);
   font-size: 18px;
   font-weight: 800;
+  display: block;
 }
 
 footer .address {
@@ -627,6 +629,25 @@ footer .address img {
   }
 }
 
+
+/* Custom Break Point - For the dog lottie on the homepage for the tablet view (576px - 992px) */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .lottie-dog1 {
+    position:relative;
+    top: -45px;
+  }
+}
+
+
+/* Custom Break Point - For the homepage H1 at the tablet view (390px - 992px) */
+@media screen and (min-width: 390px) and (max-width: 992px) {
+  .h1-homepage {
+    font-size: 4.5em;
+    line-height: 80px;
+  }
+}
+
+
 /* Large devices (small laptops, 992px and BELOW!) */
 @media screen and (max-width: 992px) {
   .image-large-feature {
@@ -641,6 +662,21 @@ footer .address img {
     max-width: 400px;
     margin: 0 auto;
     display: block;
+  }
+
+  /* Making the dog walk reward look better for this view */
+  #voted-best .proud-dog .container  {
+    padding: 30px;
+  }
+
+  /* Making the dog walk wreath look better for this view */
+  #voted-best .wreath-review img {
+    width: 38px;
+  }
+
+  /* Making the dog walk rewarder look better for this view */
+  #voted-best .wreath-review .text .who-said-it {
+    font-size: 13px;
   }
 }
 
@@ -667,10 +703,20 @@ footer .address img {
   .lottie-dog1 {
     display: none !important;
   }
+
+  /* Adding extra padding ont he left and right to all of the containers for the mobile view */
+  .section, header {
+
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
 }
 
 /* Official Breakpoint - For 390px screens only */
 @media screen and (max-width: 390px) {
+
+  
+
   /* This is for the proud dog Lottie only to move it upward on screen sizes 380 width and below */
   #voted-best .proud-dog {
     margin-top: -45px;
