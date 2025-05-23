@@ -576,6 +576,23 @@ textarea.form-control {
   font-size: 26px;
 }
 
+
+/* Pawcast Modal - Sets border radius for whole container */
+.carousel-inner {
+  border-radius: 15px;
+}
+
+/* Pawcast Modal - close button background to be transparent */
+.modal-body button {
+  background: transparent!important;
+}
+
+/* Pawcast Modal - changes color of the svg close button */
+.modal-body button svg {
+  
+  fill: rgb(42, 42, 42);
+}
+
 footer {
   background-color: #e6e6e6;
   min-height: 200px;
