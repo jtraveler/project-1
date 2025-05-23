@@ -332,6 +332,7 @@ Throughout the website build I used the following sources:
 - [Midjourney.com](https://midjourney.com/) for all images
 - [Freepik](https://www.freepik.com/) for favicon design
 - [https://trvswgnr.github.io/bs5-lightbox/](https://trvswgnr.github.io/bs5-lightbox/) for Boostrap lightbox effect for the Pawcast episodes
+- [https://anywebp.com/convert-to-webp](https://anywebp.com/convert-to-webp) for converting my jpg image files into webp format
 
 ## Author
 
