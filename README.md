@@ -223,7 +223,7 @@ I used the power of Google's impressiive NotebookLM to create my Pawcast episode
 [https://notebooklm.google.com/](https://notebooklm.google.com/)
 
 
-#### Audio Generation
+#### Research For Topics
 
 I used Perplexity to find great sources for my Pawcast topics so that I could feed them to NotebookLM. The sources
 
