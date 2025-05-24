@@ -10,6 +10,7 @@
   --secondary-color-tag-text: #90662c;
   --secondary-color-tag-background: #fbf0db;
 }
+
 /* Global styles */
 body {
   font-family: var(--primary-font);
@@ -319,7 +320,7 @@ In addition, I made it so that if the user hovers over the parent "pawcast-listi
 }
 /* This is the date section in the "paw-listings" div */
 .pawcast-listing .date {
-  flex-basis: 66px;
+  flex-basis: 58px;
   text-align: right;
   font-weight: 500;
   font-size: 14px;
@@ -577,6 +578,13 @@ textarea.form-control {
 }
 
 
+/* Pawcast Modal - Sets background color to white */
+.ratio-16x9 {
+
+  background-color: white !important;
+}
+
+
 /* Pawcast Modal - Sets border radius for whole container */
 .carousel-inner {
   border-radius: 15px;
@@ -591,6 +599,13 @@ textarea.form-control {
 .modal-body button svg {
   
   fill: rgb(42, 42, 42);
+}
+
+
+/* Pawcast Modal - Make close button to be full opacity */
+.modal-body .btn-close {
+
+  opacity: 1 !important;
 }
 
 footer {
