@@ -162,13 +162,39 @@ Stars icons from Freepik
 
 ### Images Used
 
-I used Midjourney for generatying all of the images on the website. I wanted to go for classy studio style images that I could easily cutout the background.
+I used Midjourney and ChatGPT for generatying all of the images on the website. For the staff photos, I wanted to go for classy studio style images that I could easily cutout the background. For the Pawcast photos, I wanted photos that capture humor and attention grabbing.
 
 (https://www.midjourney.com/)
+(https://www.chatgpt.com/)
 
-Image examples:
+### Pawcast Video Modal
 
-![icons-used](assets/images/for-readme/images-used.jpg)
+#### Development Build
+I used Lightbox for Boostrap 5 implementing the modal for when users click on one of the Pawcast episodes
+
+[https://trvswgnr.github.io/bs5-lightbox/](https://trvswgnr.github.io/bs5-lightbox/) for Boostrap lightbox effect for the Pawcast episodes
+
+![pawcast-modal-desktop](assets/images/for-readme/pawcast-modal-desktop.jpg)
+
+#### Audio Generation
+
+I used the power of Google's impressiive NotebookLM to create my Pawcast episodes that reference real artcles. NotebookLM genertes high quality conversational style dialog bwtween two people, which I thought would be perfect for what I need.
+
+[https://notebooklm.google.com/](https://notebooklm.google.com/)
+
+
+#### Creating the Video
+
+I used the audio that was generated from NotbookLM to create a simplistic video with using Adobe Premiere. I used the same styling from the website for consistency. Within premiere I was able to transcribe the audio and generate captions. This is good as I wanted to add captions for hearing impaired folks since overall I'm aiming for accessability for this project.
+
+[https://www.adobe.com/products/premiere.html](https://www.adobe.com/products/premiere.html)
+
+
+#### Uploading and Customizing Video Player
+
+Lastly, I uploaded each Pawcast video to Vimeo and customize the player's styling to match the website styling.
+
+[https://www.vimeo.com](https://www.vimeo.com)
 
 ### Footer
 
@@ -311,6 +337,30 @@ When testing all the website pages using Lighthouse, I found the following areas
 - Slow loading times. I converted images to webp format and resized my images to improve on page load times. This improved the score dramatically.
 - Removing unused code elements in CSS. This improved the best practice score. Though some code related to Boostrap and Google fonts is out of my control.
 
+
+## Manual testing of features
+
+| Feature                                                                                              | Expected Result                                                                                                                      | Pass or Fail |
+| :--------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- | :----------: |
+| Website logo in navigation menu links to homepage                                                    | User clicks on the logo to be taken to the homepage                                                                                  |     Pass     |
+| Links in navigation menu                                                                             | Users click home, plants, or contact to be taken to the relevant page                                                                |     Pass     |
+| Burger navigation in screens below 992px wide                                                        | Menu appears and dropdown navigation items appear                                                                                    |     Pass     |
+| Hero section on all pages contains an explanatory title                                              | User understands what they can find on the page                                                                                        |     Pass     |
+ | The images and text of the plants are linked to the correct information page                         | The user clicks and the relevant page is opened                                                                                      |     Pass     |
+| Contact form allows messages to be submitted when correct information is entered      | The user understands what needs to be filled out                                                                                     |     Pass     |
+| All fields of the contact form within the footer are a required field                                             | It's clear to the user that all fields are required as the message above the submit button is visible                                                 |     Pass     |
+| Validation errors are in place for when the user doesn't fill in fields in the correct format | The user will know if they did not fill in the form correctly |     Pass     |
+| The user is taken to the Success page see that it's obvious that the message was received and what the next steps are                                                                             | The user is taken the success page after submitting the form                                                |     Pass     |
+| The modal for each Pawcast epsiode is displaying correctly on both mobile and desktop view | The user can preveiw the episode by clicking the play button                                                                                                |     Pass     |
+| The video of each Pawcast episode does not play automatically and the user have full control of the video player along with closing the modal | The user won't be annoyed with the video experience has they have full control of the play/stop, timeline jumping, fullscreen, volume and close/exit features    |     Pass     |
+| The video modal of each Pawcast works in both mobile and desktop views | The user can view the video play on both mobile and desktop views. |     Pass     |
+| It's important to include the fullscreen feature for the Pawcast videos on mobile since the video appears small by default since the video is in horozontal format | The user can view the video in full screen mode and instructions are provided to exit fullscreen mode |     Pass     |
+| The AI Hosts speaking in the video know what they are talking about based on the data that was fed to them and they are not talking about unrelated topics | The hosts on focused on the topics, references sources and are entertaining |     Pass     |
+| The lotti animations are displaying properly on different devices | The lottie appears on all devices tested using Browserstack though it's important to note that the do not appear on mobile view due to cuasing the site to load slightly slower |    Pass     |
+| The lotti animations are displaying properly on different devices | The lottie appears on all devices tested using Browserstack though it's important to note that the do not appear on mobile view due to cuasing the site to load slightly slower |    Pass     |
+| All buttons and linkf function and perform the correct operation | All buttons and links appear to work well for thie intended use |    Pass     |
+
+
 ## Technologies Used
 
 ### Languages
@@ -319,20 +369,26 @@ HTML and CSS languages only.
 
 ### Technology
 
-Github and Boostrap.
+Github, Boostrap, AI for audio and images.
 
 ## Credits and Reference
 
 - Mentor: Spencer Barriball
+- Facilitator: Kay Welfare
 
 Throughout the website build I used the following sources:
 
 - I used example code from Code Institute projects
 - [W3Schools.com](https://www.w3schools.com/)
-- [Midjourney.com](https://midjourney.com/) for all images
+- [Midjourney.com](https://midjourney.com/) for images
+- [ChatGTP.com](https://chatgpt.com/) for images
 - [Freepik](https://www.freepik.com/) for favicon design
 - [https://trvswgnr.github.io/bs5-lightbox/](https://trvswgnr.github.io/bs5-lightbox/) for Boostrap lightbox effect for the Pawcast episodes
 - [https://anywebp.com/convert-to-webp](https://anywebp.com/convert-to-webp) for converting my jpg image files into webp format
+- [https://www.adobe.com/products/premiere.html](https://www.adobe.com/products/premiere.html) for video editing
+- [https://www.adobe.com/products/photoshop.html](https://www.adobe.com/products/photoshop.html) for photo editing
+- [https://www.vimeo.com](https://www.vimeo.com) for hosting my Pawcast videos
+- [https://notebooklm.google.com/](https://notebooklm.google.com/) for generating the Pawcast audio for each episode
 
 ## Author
 
